@@ -1,0 +1,52 @@
+[
+    {
+        "review_text": "This item was amazing",
+        "parts_id": 2,
+        "user_id": 3
+    },
+    {
+        "review_text": "Mine didn't work well",
+        "parts_id": 5,
+        "user_id": 1
+    },
+    {
+        "review_text": "Mine worked great",
+        "parts_id": 5,
+        "user_id": 2
+    },
+    {
+        "review_text": "This part was in a great condition and was easy to install",
+        "parts_id": 7,
+        "user_id": 3
+    },
+    {
+        "review_text": "It's been a week and I still received the part....",
+        "parts_id": 10,
+        "user_id": 6
+    },
+    {
+        "review_text": "My car is running like a brand new car due to this part",
+        "parts_id": 1,
+        "user_id": 4
+    },
+    {
+        "review_text": "Thank god they had this part cause mine was broken",
+        "parts_id": 8,
+        "user_id": 1
+    },
+    {
+        "review_text": "I replace this part and it broke within a month",
+        "parts_id": 6,
+        "user_id": 3
+    },
+    {
+        "review_text": "OMG the price was cheep and it works!!!",
+        "parts_id": 1,
+        "user_id": 5
+    },
+    {
+        "review_text": "Just one word....horrible",
+        "parts_id": 3,
+        "user_id": 1
+    }
+]
