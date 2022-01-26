@@ -41,4 +41,4 @@ Reviews.init(
     }
 );
 
-module.exports = Parts;
+module.exports = Reviews;

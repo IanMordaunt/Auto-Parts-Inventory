@@ -3,26 +3,26 @@ const { User, Parts, Reviews, Stores } = require('../models');
 
 const userData = require('./userData.json');
 const partsData = require('./partsData.json');
-const reviewsData = require('./reviewData.json');
-const storesData = require('./storesData.json');
+//const reviewsData = require('./reviewData.json');
+const storeData = require('./storeData.json');
 
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const users = await User.bulkCreate(userData, {
+  const user = await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
-  const users = await Parts.bulkCreate(partsData, {
+  const parts = await Parts.bulkCreate(partsData, {
     individualHooks: true,
     returning: true,
   });
-  const users = await Reviews.bulkCreate(reviewsData, {
-    individualHooks: true,
-    returning: true,
-  });
-  const users = await Stores.bulkCreate(storesData, {
+  // const reviews = await Reviews.bulkCreate(reviewsData, {
+  //   individualHooks: true,
+  //   returning: true,
+  // });
+  const stores = await Stores.bulkCreate(storeData, {
     individualHooks: true,
     returning: true,
   });
