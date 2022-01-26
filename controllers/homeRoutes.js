@@ -1,8 +1,16 @@
 const router = require('express').Router();
-//const { Parts, User } = require("../models");
+const { Stores } = require("../models");
 
 router.get("/", async (req, res) => {
-    res.render("home", { logged_in: req.session.logged_in });
+    try {
+        const stores = await Stores.findAll();
+        const data = stores.map((store) => store.get({ plain: true }));
+        res.render("home", { data, logged_in: req.session.logged_in });
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
 });
 
 router.get("/login", (req, res) => {

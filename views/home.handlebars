@@ -1,0 +1,16 @@
+<div class="rowmm">
+    {{#each data as |store|}}
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="card m-5 shadow-lg" id="blogPost{{store.id}}" style="width: 40rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{store.title}}</h5>
+                <p class="card-text">{{store.content}}</p>
+                <span class="card-text">{{store.creator}}</span>
+                <span class="card-text">{{store.date}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-4"></div>
+    {{/each}}
+</div>
