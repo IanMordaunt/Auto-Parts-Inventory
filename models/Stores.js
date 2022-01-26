@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Parts extends Model {}
+class Stores extends Model {}
 
-Parts.init(
+Stores.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,34 +11,18 @@ Parts.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        part_name: {
+        store_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        price: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        stock: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        description: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-        },
-        catagories: {
+        location: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        store_id: {
+        hours_operation: {
             type: DataTypes.STRING,
             allowNull: false,
-            refernce: {
-                model: "stores",
-                key: "id"
-            }
-        }
+        },
         
     },
     {
@@ -50,4 +34,4 @@ Parts.init(
     }
 );
 
-module.exports = Parts;
+module.exports = Stores;
