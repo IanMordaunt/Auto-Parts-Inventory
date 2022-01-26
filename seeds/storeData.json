@@ -1,0 +1,32 @@
+[
+    {
+        "store_name": "Jack's Auto Repair",
+        "location": "Valley Location",
+        "hours_operation": "9am-5pm M-F"
+    },
+    {
+        "store_name": "GoGoAuto",
+        "location": "East Location",
+        "hours_operation": "9am-5pm M-Thu"
+    },
+    {
+        "store_name": "CarZone",
+        "location": "Southeast Location",
+        "hours_operation": "10am-5pm M-F"
+    },
+    {
+        "store_name": "Cloud Auto",
+        "location": "East Location",
+        "hours_operation": "9am-5pm M-F"
+    },
+    {
+        "store_name": "Pearson's Car Repair and Body",
+        "location": "North Location",
+        "hours_operation": "9am-5pm M-F"
+    },
+    {
+        "store_name": "Jack and Jill's Body",
+        "location": "West Location",
+        "hours_operation": "9am-5pm M-F"
+    }
+]
