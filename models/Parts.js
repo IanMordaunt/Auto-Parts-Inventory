@@ -26,7 +26,12 @@ Parts.init(
         description: {
             type: DataTypes.TEXT,
             allowNull: false,
+        },
+        catagories: {
+            type: DataTypes.STRING,
+            allowNull: false,
         }
+        
     },
     {
         sequelize,
