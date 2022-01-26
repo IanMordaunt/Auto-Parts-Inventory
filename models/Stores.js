@@ -30,7 +30,7 @@ Stores.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'parts',
+        modelName: 'stores',
     }
 );
 
