@@ -1,19 +1,74 @@
 [
-    {
-      "category": "Transmission",
-      "description": "",
-      "components": ""
-      
+  {
+    "part_name": "Torque Converter",
+    "price": 700,
+    "stock": 20,
+    "category": "Transmission",
+    "description": "Acts like a clutch to allow the vehicle to come to a stop in gear while the engine is still running.",
+    "store_id": 3
+  },
+  {
+    "part_name": "Battery",
+    "price": 130,
+    "stock": 85,
+    "category": "Electrical",
+    "description": "Provides power to vehicle systems",
+    "store_id": 4
+  },
+  {
+    "part_name": "Shock absorbers",
+    "price": 400,
+    "stock": 10,
+    "category": "Suspension",
+    "description": "act as a cushion between the axles and the body and reduce the shocks on the body produced by a rough road surface.",
+    "store_id": 1
+  },
+  {
+      "part_name": "Catalytic Converter",
+      "price": 1000,
+      "stock": 25,
+      "category": "Exhaust System",
+      "description": "Converts harmful engine emissions to carbon dioxide (CO2) and water (H2O).",
+      "store_id": 2
+  },
+  {
+      "part_name": "Rotary Valve",
+      "price": 1000,
+      "stock": 40,
+      "category": "Steering",
+      "description": "a type of valve in which the rotation of a passage or passages in a transverse plug regulates the flow of liquid or gas through the attached pipes.",
+      "store_id": 4
+  },
+  {
+      "part_name": "Cylinder Block",
+      "price": 2000,
+      "stock": 20,
+      "category": "Engine",
+      "description": "The part of an engine containing the cylinders.",
+      "store_id": 5
     },
     {
-      "category": "The Ultimate Tech Quiz",
-      "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-      "components": ""
+      "part_name": "Alternator",
+      "price": 85,
+      "stock": 120,
+      "category": "Electrical",
+      "description": "An electrical generator that converts mechanical energy to electrical energy in the form of alternating current.",
+      "store_id": 1
     },
     {
-      "category": "Roll 'Em Up",
-      "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-      "components": ""
+      "part_name": "Compressor Condensor",
+      "price": 500,
+      "stock": 50,
+      "category": "AC",
+      "description": "The outdoor portion of an air conditioner or heat pump that either releases or collects heat",
+      "store_id": 2
+    },
+    {
+      "part_name": "Brake Lines",
+      "price": 20,
+      "stock": 30,
+      "category": "Brake System",
+      "description": "Allows your car to turn pedal pressure into stopping power.",
+      "store_id": 3
     }
-  ]
-  
+]
