@@ -3,8 +3,8 @@ const { User, Parts, Reviews, Stores } = require('../models');
 
 const userData = require('./userData.json');
 const partsData = require('./partsData.json');
-const reviewsData = require('./reviewData.json');
-const storesData = require('./storesData.json');
+//const reviewsData = require('./reviewData.json');
+const storeData = require('./storeData.json');
 
 
 const seedDatabase = async () => {
@@ -18,11 +18,11 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-  const reviews = await Reviews.bulkCreate(reviewsData, {
-    individualHooks: true,
-    returning: true,
-  });
-  const stores = await Stores.bulkCreate(storesData, {
+  // const reviews = await Reviews.bulkCreate(reviewsData, {
+  //   individualHooks: true,
+  //   returning: true,
+  // });
+  const stores = await Stores.bulkCreate(storeData, {
     individualHooks: true,
     returning: true,
   });
