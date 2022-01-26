@@ -2,7 +2,7 @@ const router = require('express').Router();
 //const { Parts, User } = require("../models");
 
 router.get("/", async (req, res) => {
-    res.render("main", { logged_in: req.session.logged_in });
+    res.render("home", { logged_in: req.session.logged_in });
 });
 
 router.get("/login", (req, res) => {
