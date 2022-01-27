@@ -9,7 +9,7 @@ Parts.hasMany(Reviews, {
 });
 
 Stores.hasMany(Parts, {
-    foreignKey: 'store_id',
+    foreignKey: 'stores_id',
     onDelete: 'CASCADE'
 });
 
