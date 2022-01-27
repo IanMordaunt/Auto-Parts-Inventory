@@ -27,14 +27,14 @@ Parts.init(
             type: DataTypes.TEXT,
             allowNull: false,
         },
-        catagories: {
+        category: {
             type: DataTypes.STRING,
             allowNull: false,
         },
         store_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
-            refernce: {
+            references: {
                 model: "stores",
                 key: "id"
             }

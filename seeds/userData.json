@@ -1,31 +1,31 @@
 [
     {
-      "name": "Jan",
+      "user_name": "Jan",
       "email": "January@hotmail.com",
       "password": "sunshine123"
     },
     {
-      "name": "Hal",
+      "user_name": "Hal",
       "email": "dingdong04@gmail.com",
       "password": "deepblue0222"
     },
     {
-      "name": "Frank",
+      "user_name": "Frank",
       "email": "franko@aol.com",
       "password": "skyhigh456"
     },
     {
-        "name": "Jean",
+        "user_name": "Jean",
         "email": "jean23@aol.com",
         "password": "mountaintop234"
       },
       {
-        "name": "Gill",
+        "user_name": "Gill",
         "email": "gillman@aol.com",
         "password": "runthru02"
       },
       {
-        "name": "Ed",
+        "user_name": "Ed",
         "email": "ed-ucation@aol.com",
         "password": "greengrass88"
       }
