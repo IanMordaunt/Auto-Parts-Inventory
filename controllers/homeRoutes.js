@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Stores } = require("../models");
+const { User, Stores, Parts, Reviews } = require("../models");
 
 router.get("/", async (req, res) => {
     try {
@@ -49,6 +49,21 @@ router.post("/signup", async (req, res) => {
             req.session.logged_in = true;
             res.status(200).json(data);
         });
+    }
+    catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+router.post("/newPart", async (req,res) => {
+    try {
+        const data = await Parts.create(req.body);
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.status(400).json("Unable to add new part");
+        }
     }
     catch (err) {
         res.status(400).json(err);
