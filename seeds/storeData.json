@@ -3,36 +3,42 @@
         "store_name": "Jack's Auto Repair",
         "location": "Valley Location",
         "hours_operation": "9am-5pm M-F",
-        "url" : "https://www.google.com"
+        "store_img": "https://i.ibb.co/3sG4Znv/1autozone-pr-1320px-1024x603-jpg-optimal.jpg",
+        "url" : "https://i.ibb.co/6Bmp5TK/2022-01-27-6.png"
     },
     {
         "store_name": "GoGoAuto",
         "location": "East Location",
         "hours_operation": "9am-5pm M-Thu",
-        "url" : "https://www.google.com"
+        "store_img": "https://i.ibb.co/wS02FPY/1-Delivery-Truck-Front2-1600x600.jpg",
+        "url" : "https://i.ibb.co/YfLGscq/2022-01-27-5.png"
     },
     {
         "store_name": "CarZone",
         "location": "Southeast Location",
         "hours_operation": "10am-5pm M-F",
-        "url" : "https://www.google.com"
+        "store_img": "https://i.ibb.co/0fq1BwR/1k2-ea294120-96fe-4cbb-b6e8-32c316fa363a-v1.jpg",
+        "url" : "https://i.ibb.co/j3p2xPL/2022-01-27-7.png"
     },
     {
         "store_name": "Cloud Auto",
         "location": "East Location",
         "hours_operation": "9am-5pm M-F",
-        "url" : "https://www.google.com"
+        "store_img": "https://i.ibb.co/1TCGZCS/1-OReilly-Auto-Parts-shutterstock-1335968372-1068x601.jpg",
+        "url" : "https://i.ibb.co/dLG7gZG/2022-01-27-8.png"
     },
     {
         "store_name": "Pearson's Car Repair and Body",
         "location": "North Location",
         "hours_operation": "9am-5pm M-F",
-        "url" : "https://www.google.com"
+        "store_img": "https://i.ibb.co/yY0K76p/1store-front-sign-napa-parts-store-located-riverside-california-napa-auto-parts-175774275.jpg",
+        "url" : "https://i.ibb.co/F41wwTC/2022-01-27-9.png"
     },
     {
         "store_name": "Jack and Jill's Body",
         "location": "West Location",
         "hours_operation": "9am-5pm M-F",
-        "url" : "https://www.google.com"
+        "store_img": "https://i.ibb.co/grXkd0r/1-Traralgon-FB.jpg",
+        "url" : "https://i.ibb.co/BNx8ST5/2022-01-27-10.png"
     }
 ]
