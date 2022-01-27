@@ -1,10 +1,11 @@
 const router = require('express').Router();
-const { Stores } = require("../models/Stores");
+const { Stores } = require("../models");
 
 router.get("/", async (req, res) => {
     try {
         const stores = await Stores.findAll();
         const data = stores.map((store) => store.get({ plain: true }));
+        console.log(data)
         res.render("home", { data, logged_in: req.session.logged_in });
     }
     catch (err) {
