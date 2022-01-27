@@ -1,5 +1,7 @@
 const router = require('express').Router();
-const { Stores, User } = require("../models");
+
+const { User, Stores, Parts, Reviews } = require("../models");
+
 
 router.get("/", async (req, res) => {
     try {
@@ -67,6 +69,35 @@ router.get("/parts", (req, res) => {
     //else {
         res.render("parts");
     //}
+});
+
+router.post("/signup", async (req, res) => {
+    try {
+        const data = await User.create(req.body);
+        req.session.save(() => {
+            req.session.user_id = data.id;
+            req.session.logged_in = true;
+            res.status(200).json(data);
+        });
+    }
+    catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+router.post("/newPart", async (req,res) => {
+    try {
+        const data = await Parts.create(req.body);
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.status(400).json("Unable to add new part");
+        }
+    }
+    catch (err) {
+        res.status(400).json(err);
+    }
 });
 
 module.exports = router;
