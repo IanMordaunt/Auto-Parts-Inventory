@@ -23,6 +23,10 @@ Stores.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        store_img: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         url: {
             type: DataTypes.STRING,
             allowNull: false

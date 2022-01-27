@@ -17,3 +17,17 @@
 .textHeader {
     color: white;
 }
+
+.url {
+    margin: 10px;
+    width: 150px;
+    display: flex;
+    float: right;   
+}
+
+.store_img{
+    display: flex;
+    float: right;  
+    width: 150px;
+    margin: 10px;
+}
