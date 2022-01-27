@@ -1,5 +1,7 @@
 const router = require('express').Router();
+
 const { User, Stores, Parts, Reviews } = require("../models");
+
 
 router.get("/", async (req, res) => {
     try {
@@ -15,7 +17,7 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-    if (req.session.loggedIn) {
+    if (req.session.logged_in) {
         res.redirect("/");
     }
     else {
@@ -23,8 +25,36 @@ router.get("/login", (req, res) => {
     }
 });
 
+router.post("/login", (req, res) => {
+    User.findOne({
+        where: {
+            email: req.body.email,
+        }
+    }).then ((userData) => {
+        console.log(userData)
+        if(!userData) {
+            res.status(400).json({message: "Invalid Credentials!"})
+            return
+        }
+
+        const passwordOK = userData.checkPassword(req.body.password);
+
+        if(!passwordOK) {
+            res.status(400).json({message: "Invalid Credentials!"})
+        }
+
+        req.session.save(() => {
+            req.session.userid = userData.id;
+            req.session.user_name = userData.user_name;
+            req.session.logged_in = true;
+
+            res.json(userData)
+        })
+    }).catch((err) => res.status(500).json(err))
+})
+
 router.get("/signup", (req, res) => {
-    if (req.session.loggedIn) {
+    if (req.session.logged_in) {
         res.redirect("/");
     }
     else {
