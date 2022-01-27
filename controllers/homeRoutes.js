@@ -32,4 +32,13 @@ router.get("/signup", (req, res) => {
     }
 });
 
+router.get("/parts", (req, res) => {
+    //if (req.session.loggedIn) {
+    //    res.redirect("/");
+    //}
+    //else {
+        res.render("parts");
+    //}
+});
+
 module.exports = router;
