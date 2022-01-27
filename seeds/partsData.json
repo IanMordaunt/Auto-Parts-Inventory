@@ -70,5 +70,13 @@
       "category": "Brake System",
       "description": "Allows your car to turn pedal pressure into stopping power.",
       "store_id": 3
+    },
+    {
+      "part_name": "Brake Lines",
+      "price": 20,
+      "stock": 30,
+      "category": "Brake System",
+      "description": "Allows your car to turn pedal pressure into stopping power.",
+      "store_id": 3
     }
 ]
