@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const withAuth  = require("../utils/auth");
 const { User, Stores, Parts, Reviews } = require("../models");
 
 router.get("/", async (req, res) => {
@@ -59,12 +60,12 @@ router.get("/signup", (req, res) => {
   }
 });
 
-router.get("/parts", (req, res) => {
-  //if (req.session.loggedIn) {
+router.get("/parts", withAuth, (req, res) => {
+   //if (req.session.loggedIn) {
   //    res.redirect("/");
   //}
   //else {
-  res.render("parts");
+  res.render("parts", {logged_in: req.session.logged_in});
   //}
 });
 
