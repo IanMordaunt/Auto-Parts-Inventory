@@ -1,0 +1,21 @@
+
+
+<div class="row">
+    {{#each data as |part|}}
+    <div class="col-4">
+        <div class="card m-5 shadow-lg" id="blogPost{{part.id}}" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{part.part_name}}</h5>
+                <p class="card-text">{{part.price}}</p>
+                <p class="card-text">{{part.stock}}</p>
+                <textarea class="card-text">{{part.desccription}}</textarea>
+                <span class="card-text">{{part.hours_operation}}</span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+{{#if engineSelected }}
+{{> engine-parts}}
+{{/if}}
