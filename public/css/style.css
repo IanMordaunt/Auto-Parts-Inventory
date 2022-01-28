@@ -22,12 +22,13 @@
     margin: 10px;
     width: 150px;
     display: flex;
-    float: right;   
+    float: bottom; 
 }
 
 .store_img{
     display: flex;
-    float: right;  
+    float: bottom;  
     width: 150px;
     margin: 10px;
 }
+
