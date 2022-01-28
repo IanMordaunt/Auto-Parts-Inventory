@@ -1,3 +1,5 @@
+{{>newParts}}
+
 <div>
   <select id="categoryDropdown" class="form-select" aria-label="Default select example">
   <option selected>Search</option>
@@ -9,9 +11,24 @@
   <option value="exhaust">Exhaust</option>
 </select>
 </div>
+
 <button onclick="doSearch()"></button>
 <script src="js/client.js"></script>
 
 {{#if engine}}
 {{> part-card}}
 {{/if}}
+
+
+
+
+{{!-- {{#if engineSelected}}
+{{>engine}}
+{{/if}} --}}
+
+
+
+
+
+
+
