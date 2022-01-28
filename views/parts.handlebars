@@ -1,11 +1,17 @@
 <div>
-  <select class="form-select" aria-label="Default select example">
+  <select id="categoryDropdown" class="form-select" aria-label="Default select example">
   <option selected>Search</option>
-  <option value="1">Engine</option>
-  <option value="2">Transmission</option>
-  <option value="3">Electrical</option>
-  <option value="4">Suspension</option>
-  <option value="5">AC</option>
-  <option value="6">Exhaust</option>
+  <option value="engine">Engine</option>
+  <option value="transmission">Transmission</option>
+  <option value="electrical">Electrical</option>
+  <option value="suspension">Suspension</option>
+  <option value="ac">AC</option>
+  <option value="exhaust">Exhaust</option>
 </select>
 </div>
+<button onclick="doSearch()"></button>
+<script src="js/client.js"></script>
+
+{{#if engine}}
+{{> part-card}}
+{{/if}}

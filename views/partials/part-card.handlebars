@@ -1,0 +1,18 @@
+
+
+<div class="row">
+    {{#each data as |part|}}
+    <div class="col-4">
+        <div class="card m-5 shadow-lg" id="parts{{part.id}}" style="width: 30rem;">
+            <div class="card-body">
+                <h2 class="card-category">{{part.category}}</h2>
+                <h5 class="card-title">{{part.part_name}}</h5>
+                <p class="card-price">{{part.price}}</p>
+                <p class="card-stock">{{part.stock}}</p>
+                <textarea class="card-description">{{part.desccription}}</textarea>
+                <p class="card-store_id">{{part.store_id}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
