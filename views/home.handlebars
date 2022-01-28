@@ -1,14 +1,14 @@
 <div class="row">
     {{#each data as |store|}}
     <div class="col-4">
-        <div class="card m-5 shadow-lg" id="blogPost{{store.id}}" style="width: 30rem;">
+        <div class="card m-5 shadow-lg" id="blogPost{{store.id}}" style="width: 25rem;">
             <div class="card-body">
                 <h5 class="card-title">{{store.store_name}}</h5>
                 <p class="card-text">{{store.location}}</p>
                 <span class="card-text">{{store.hours_operation}}</span>
 
-                <img class="url" src="{{store.url}}" alt="storefront"> 
                 <img class="store_img" src="{{store.store_img}}" alt="storefront">
+                <img class="url" src="{{store.url}}" alt="storefront"> 
             </div>
         </div>
     </div>
