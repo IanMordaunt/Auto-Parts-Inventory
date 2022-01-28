@@ -69,6 +69,8 @@ router.get("/parts", withAuth, (req, res) => {
   //}
 });
 
+
+
 router.post("/signup", async (req, res) => {
   try {
     const data = await User.create(req.body);
@@ -105,7 +107,7 @@ router.post("/logout", (req, res) => {
   }
 });
 
-router.get("/partsPage/:value", async (req, res) => {
+router.get("/partsPage/:value", withAuth, async (req, res) => {
   try {
     const data = await Parts.findAll({
       where: {
@@ -113,8 +115,8 @@ router.get("/partsPage/:value", async (req, res) => {
       },
     });
     const data2 = data.map((e) => e.get({ plain: true }));
-    console.log(data2)
-    res.render('partsPage', { data2 })
+    console.log(req.session.logged_in)
+    res.render('partsPage', { data2, logged_in: req.session.logged_in});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
