@@ -104,19 +104,20 @@ router.post("/logout", (req, res) => {
   }
 });
 
-router.get("/parts/:value", async (req, res) => {
+router.get("/partsPage/:value", async (req, res) => {
   try {
     const data = await Parts.findAll({
       where: {
         category: req.params.value,
       },
-      
     });
-    res.render('parts', { data })
+    const data2 = data.map((e) => e.get({ plain: true }));
+    console.log(data2)
+    res.render('partsPage', { data2 })
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
-});
+})
 
 module.exports = router;
