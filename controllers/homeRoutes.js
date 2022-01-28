@@ -120,4 +120,38 @@ router.get("/partsPage/:value", async (req, res) => {
   }
 })
 
+router.delete("/deletePart/:id", async (req, res) => {
+  try {
+    const data = await Parts.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.put("/updatePart/:id", async (req, res) => {
+  try {
+    const data = await Parts.update(
+      {
+        part_name: req.body.part_name,
+        price: req.body.price,
+        stock: req.body.stock,
+        description: req.body.description,
+        category: req.body.category,
+        store_id: req.body.store_id
+      },
+      { where: { id: req.params.id } }
+    )
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
