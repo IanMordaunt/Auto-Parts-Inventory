@@ -4,13 +4,16 @@
     <div class="col-4">
         <div class="card m-5 shadow-lg" style="width: 30rem;">
             <div class="card-body">
-                <h2 class="card-category">{{part.category}}</h2>
-                <h5 class="card-title">{{part.part_name}}</h5>
-                <p class="card-price">{{part.price}}</p>
-                <p class="card-stock">{{part.stock}}</p>
+                <h2 id="card-id">{{part.id}}</h2>
+                <h2 id="card-category">{{part.category}}</h2>
+                <h5 id="card-name">{{part.part_name}}</h5>
+                <p id="card-price">{{part.price}}</p>
+                <p id="card-stock">{{part.stock}}</p>
                 <textarea class="card-description">{{part.description}}</textarea>
                 <p class="card-store_id">{{part.store_id}}</p>
-            </div>
+                 <button id="updatebtn" type="button" class="btn btn-secondary" onclick="updatePart">Update Part</button>
+                 <button type="button" class="btn btn-secondary" onclick="deletePart">Delete Part</button>
+                
         </div>
     </div>
     {{/each}}
