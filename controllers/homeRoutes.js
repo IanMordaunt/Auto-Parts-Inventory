@@ -116,7 +116,7 @@ router.get("/partsPage/:value", withAuth, async (req, res) => {
     });
     const data2 = data.map((e) => e.get({ plain: true }));
     console.log(req.session.logged_in)
-    res.render('partsPage', { data2, logged_in: req.session.logged_in});
+    res.render('partsPage', { layout: 'main2', data2, logged_in: req.session.logged_in});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

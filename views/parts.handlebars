@@ -1,37 +1,32 @@
-<div class="parts_container">
-  <div class="newPartBtn">
-{{>newParts}}
+<div class="parts_body">
+  <div class="parts_container">
+    <div class="newPartBtn">
+      {{>newParts}}
+    </div>
+
+    <div>
+      <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
+        <option selected>Search</option>
+        <option value="engine">Engine</option>
+        <option value="transmission">Transmission</option>
+        <option value="electrical">Electrical</option>
+        <option value="suspension">Suspension</option>
+        <option value="ac">AC</option>
+        <option value="exhaust system">Exhaust</option>
+        <option value="brake system">Brakes</option>
+      </select>
+    </div>
+
+    {{!-- <button onclick="doSearch()"></button> --}}
+    {{!-- <button onclick="doSearch()" type="button" class="btn btn-primary btn-lg">Find Part</button> --}}
+    <button onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
+    <script src="js/client.js"></script>
+
   </div>
-
-<div>
-  <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
-  <option selected>Search</option>
-  <option value="engine">Engine</option>
-  <option value="transmission">Transmission</option>
-  <option value="electrical">Electrical</option>
-  <option value="suspension">Suspension</option>
-  <option value="ac">AC</option>
-  <option value="exhaust">Exhaust</option>
-</select>
 </div>
-
-{{!-- <button onclick="doSearch()"></button> --}}
-{{!-- <button onclick= "doSearch()" type="button" class="btn btn-primary btn-lg">Find Part</button> --}}
-<button onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
-<script src="js/client.js"></script>
-
-</div>
-
 
 
 
 {{!-- {{#if engineSelected}}
 {{>engine}}
 {{/if}} --}}
-
-
-
-
-
-
-
