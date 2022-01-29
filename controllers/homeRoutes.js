@@ -139,6 +139,8 @@ router.delete("/deletePart/:id", async (req, res) => {
 
 router.put("/updatePart/:id", async (req, res) => {
   try {
+    console.log("TESTTTTTTTT")
+    console.log(req.body)
     const data = await Parts.update(
       {
         part_name: req.body.part_name,

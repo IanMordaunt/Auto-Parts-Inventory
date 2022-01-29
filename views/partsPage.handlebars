@@ -1,4 +1,24 @@
 
+
+<div class="row">
+    {{#each data2 as |part|}}
+    <div class="col-4">
+        <div class="card m-5 shadow-lg" style="width: 30rem;">
+            <div class="card-body">
+                <h2 id="card-id">Part ID #: {{part.id}}</h2>
+                <h2 id="card-category">{{part.category}}</h2>
+                <h5 id="card-name">{{part.part_name}}</h5>
+                <p id="card-price">Price: ${{part.price}}</p>
+                <p id="card-stock">Units in Stock: {{part.stock}}</p>
+                <textarea class="card-description">{{part.description}}</textarea>
+                <p class="card-store_id">{{part.store_id}}</p>
+                 <div>
+                   <div class="updatePartBtn" {{>updatePart}}></div>
+                </div>
+
+                 <button type="button" class="btn btn-secondary" onclick="deletePart">Delete Part</button>
+                
+
     <div class="row">
         {{#each data2 as |part|}}
         <div class="col-3"></div>
@@ -19,7 +39,9 @@
                 </div>
             </div>
             {{/each}}
+
         </div>
     </div>
 
 
+<script></script>

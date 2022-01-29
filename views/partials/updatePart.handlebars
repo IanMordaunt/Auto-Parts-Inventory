@@ -1,0 +1,79 @@
+<div class="row">
+    {{!-- <div class="col-3"></div> --}}
+    <div class="col-3">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#insertUpdateModal"
+            onclick="showUpdateModal()">
+            Update Part
+        </button>
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="insertUpdateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="insertForm">
+                            <div class="form-group">
+                                <label for="insertUpdateId">Part Id</label>
+                                <input type="text" class="form-control" id="insertUpdatePartId"
+                                    placeholder="Enter Part Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="insertUpdateName">Part Name</label>
+                                <input type="text" class="form-control" id="insertUpdatePartName"
+                                    placeholder="Enter Part Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="insertUpdatePrice">Price</label>
+                                <input type="number" class="form-control" id="insertUpdatePrice"
+                                    placeholder="Price">
+                            </div>
+                            <div class="form-group">
+                                <label for="insertUpdateStock">Stock</label>
+                                <input type="number" class="form-control" id="insertUpdateStock"
+                                    placeholder="Stock">
+                            </div>
+                            <div class="form-group">
+                                <label for="insertUpdateDescription">Description</label>
+                                <input type="text" class="form-control" id="insertUpdateDescription"
+                                    placeholder="Description">
+                            </div>
+                            <div>
+                                <select class="form-select" aria-label="Category" id="insertUpdateCategory">
+                                    <option selected>Category</option>
+                                    <option value="Engine">Engine</option>
+                                    <option value="Transmission">Transmission</option>
+                                    <option value="Electrical">Electrical</option>
+                                    <option value="Suspension">Suspension</option>
+                                    <option value="AC">AC</option>
+                                    <option value="Exhaust">Exhaust</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="insertUpdateStore">Store ID</label>
+                                <input type="number" class="form-control" id="insertUpdateStore"
+                                    placeholder="Store">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="insertNewPart()">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-3"></div>
+</div>
+
+<script src="../js/updatePart.js"></script>
