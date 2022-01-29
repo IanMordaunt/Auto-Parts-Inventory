@@ -15,11 +15,12 @@
                 </div>
 
 
-                <button id= "deleteBtn" type="button" class="btn btn-secondary" onclick="deleteButtonHandler()">Delete Part</button>
-                <button type="button" class="btn btn-secondary" onclick="showReview()">Show Reviews</button>
-                <button type="button" class="btn btn-secondary" onclick="newReview()">New Review</button>
+                <button id="deleteBtn" type="button" class="btn btn-secondary" onclick="deleteButtonHandler()">Delete
+                    Part</button>
+                <button type="button" class="btn btn-secondary" onclick="showReview('{{part.id}}')">Show Reviews</button>
+                <button type="button" class="btn btn-secondary" onclick="newReview('{{part.id}}')">New Review</button>
 
-      
+
 
             </div>
         </div>
@@ -27,6 +28,30 @@
     {{/each}}
 </div>
 
+<div class="modal fade" id="newReviewModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Add New Review for Part: </h5>
+                <h5 class="modal-title" id="modalPartID"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="reviewContent"></label>
+                        <input type="textarea" class="form-control" id="reviewContent" placeholder="Enter your review">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeReviewModal()">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveReviewModal()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script src-"../js/reviews.js"></script>
+
+<script src="../js/reviews.js"></script>
 <script src="../js/delete-part.js"></script>
