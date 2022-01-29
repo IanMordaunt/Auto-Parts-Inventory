@@ -1,5 +1,3 @@
-
-
 <div class="row">
     {{#each data2 as |part|}}
     <div class="col-4">
@@ -12,35 +10,13 @@
                 <p id="card-stock">Units in Stock: {{part.stock}}</p>
                 <textarea class="card-description">{{part.description}}</textarea>
                 <p class="card-store_id">{{part.store_id}}</p>
-                 <div>
-                   <div class="updatePartBtn" {{>updatePart}}></div>
+                <div>
+                    <div class="updatePartBtn" {{>updatePart}}></div>
                 </div>
 
-                 <button type="button" class="btn btn-secondary" onclick="deletePart">Delete Part</button>  
+                <button type="button" class="btn btn-secondary" onclick="deletePart()">Delete Part</button>
+            </div>
         </div>
     </div>
     {{/each}}
-
-
-    {{!-- <div class="row">
-        {{#each data2 as |part|}}
-        <div class="col-3"></div>
-        <div class="col-6">
-            <div class="card m-5 shadow-lg" style="width: 30rem; border: solid 20px; border-image: linear-gradient(#C30000, #1E1515) 30; ">
-                <div class="card-body">
-                    <h2 id="card-id">Part ID #: {{part.id}}</h2>
-                    <h2 id="card-category"><strong>{{part.part_name}}</strong></h2>
-                    <h5 id="card-name">{{part.category}}</h5>
-                    <p id="card-price">Price: ${{part.price}}</p>
-                    <p id="card-stock">Units in Stock: {{part.stock}}</p>
-                    <p style="text-decoration: underline;">Description</p>
-                    <p class="card-description">{{part.description}}</p>
-                    <p class="card-store_id">{{part.store_id}}</p>
-                    <button id="updatebtn" type="button" class="btn btn-success" onclick="updatePart">Update
-                        Part</button>
-                    <button id="deletebtn" type="button" class="btn btn-danger" onclick="deletePart">Delete</button>
-                </div>
-            </div>
- 
-
-<script></script> --}}
+</div>
