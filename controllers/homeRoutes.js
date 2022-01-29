@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const withAuth  = require("../utils/auth");
+const withAuth = require("../utils/auth");
 const { User, Stores, Parts, Reviews } = require("../models");
 
 router.get("/", async (req, res) => {
@@ -34,13 +34,10 @@ router.post("/login", (req, res) => {
         res.status(400).json({ message: "Invalid Credentials!" });
         return;
       }
-
       const passwordOK = userData.checkPassword(req.body.password);
-
       if (!passwordOK) {
         res.status(400).json({ message: "Invalid Credentials!" });
       }
-
       req.session.save(() => {
         req.session.userid = userData.id;
         req.session.user_name = userData.user_name;
@@ -61,11 +58,11 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("/parts", withAuth, (req, res) => {
-   //if (req.session.loggedIn) {
+  //if (req.session.loggedIn) {
   //    res.redirect("/");
   //}
   //else {
-  res.render("parts", {logged_in: req.session.logged_in});
+  res.render("parts", { logged_in: req.session.logged_in });
   //}
 });
 
@@ -116,7 +113,7 @@ router.get("/partsPage/:value", withAuth, async (req, res) => {
     });
     const data2 = data.map((e) => e.get({ plain: true }));
     console.log(req.session.logged_in)
-    res.render('partsPage', { layout: 'main2', data2, logged_in: req.session.logged_in});
+    res.render('partsPage', { layout: 'main2', data2, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -139,8 +136,6 @@ router.delete("/deletePart/:id", async (req, res) => {
 
 router.put("/updatePart/:id", async (req, res) => {
   try {
-    console.log("TESTTTTTTTT")
-    console.log(req.body)
     const data = await Parts.update(
       {
         part_name: req.body.part_name,
@@ -156,6 +151,20 @@ router.put("/updatePart/:id", async (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
+  }
+});
+
+router.post("/addReview", async (req, res) => {
+  try {
+    const data = await Reviews.create({
+      user_id: req.session.user_id,
+      parts_id: req.body.id,
+      review_text: req.body.content
+    });
+    res.status(200).json(data);
+  }
+  catch (err) {
+
   }
 });
 
