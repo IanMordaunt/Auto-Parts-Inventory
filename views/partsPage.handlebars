@@ -14,11 +14,19 @@
                     <div class="updatePartBtn" {{>updatePart}}></div>
                 </div>
 
+
                 <button id= "deleteBtn" type="button" class="btn btn-secondary" onclick="deleteButtonHandler()">Delete Part</button>
+                <button type="button" class="btn btn-secondary" onclick="showReview()">Show Reviews</button>
+                <button type="button" class="btn btn-secondary" onclick="newReview()">New Review</button>
+
+      
+
             </div>
         </div>
     </div>
     {{/each}}
 </div>
 
+
+<script src-"../js/reviews.js"></script>
 <script src="../js/delete-part.js"></script>
