@@ -32,3 +32,13 @@
     margin: 10px;
 }
 
+.newPartBtn {
+   text-align:start;
+}
+
+.updatePartBtn {
+    border-style: solid;
+    border-color: brown;
+    max-width: 7rem;
+}
+

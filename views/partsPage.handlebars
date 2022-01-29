@@ -11,7 +11,10 @@
                 <p id="card-stock">Units in Stock: {{part.stock}}</p>
                 <textarea class="card-description">{{part.description}}</textarea>
                 <p class="card-store_id">{{part.store_id}}</p>
-                 <button id="updatebtn" type="button" class="btn btn-secondary" onclick="updatePart">Update Part</button>
+                 <div>
+                   <div class="updatePartBtn" {{>updatePart}}></div>
+                </div>
+
                  <button type="button" class="btn btn-secondary" onclick="deletePart">Delete Part</button>
                 
         </div>
@@ -19,3 +22,4 @@
     {{/each}}
 </div>
 
+<script></script>

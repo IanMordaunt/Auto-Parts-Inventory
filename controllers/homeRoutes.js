@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const withAuth  = require("../utils/auth");
 const { User, Stores, Parts, Reviews } = require("../models");
 
 router.get("/", async (req, res) => {
@@ -59,14 +60,16 @@ router.get("/signup", (req, res) => {
   }
 });
 
-router.get("/parts", (req, res) => {
-  //if (req.session.loggedIn) {
+router.get("/parts", withAuth, (req, res) => {
+   //if (req.session.loggedIn) {
   //    res.redirect("/");
   //}
   //else {
-  res.render("parts");
+  res.render("parts", {logged_in: req.session.logged_in});
   //}
 });
+
+
 
 router.post("/signup", async (req, res) => {
   try {
@@ -104,7 +107,7 @@ router.post("/logout", (req, res) => {
   }
 });
 
-router.get("/partsPage/:value", async (req, res) => {
+router.get("/partsPage/:value", withAuth, async (req, res) => {
   try {
     const data = await Parts.findAll({
       where: {
@@ -112,12 +115,48 @@ router.get("/partsPage/:value", async (req, res) => {
       },
     });
     const data2 = data.map((e) => e.get({ plain: true }));
-    console.log(data2)
-    res.render('partsPage', { data2 })
+    console.log(req.session.logged_in)
+    res.render('partsPage', { data2, logged_in: req.session.logged_in});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 })
+
+router.delete("/deletePart/:id", async (req, res) => {
+  try {
+    const data = await Parts.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.put("/updatePart/:id", async (req, res) => {
+  try {
+    console.log("TESTTTTTTTT")
+    console.log(req.body)
+    const data = await Parts.update(
+      {
+        part_name: req.body.part_name,
+        price: req.body.price,
+        stock: req.body.stock,
+        description: req.body.description,
+        category: req.body.category,
+        store_id: req.body.store_id
+      },
+      { where: { id: req.params.id } }
+    )
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
