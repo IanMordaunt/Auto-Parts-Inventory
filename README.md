@@ -1,7 +1,9 @@
 # Auto-Parts-Inventory
 
 ## Description
-Allows a user to access a database of auto parts with full CRUD operations
+Allows a user to access a database of auto parts with full CRUD operations.
+
+Utilizes parsley.js for form validation. https://parsleyjs.org/
 
 ## Table of Contents
 
@@ -16,8 +18,6 @@ Allows a user to access a database of auto parts with full CRUD operations
 
  ## Links
 https://github.com/IanMordaunt/Auto-Parts-Inventory
-
-
 
  ## Installation
 To install necessary dependencies, run the following command:
@@ -43,10 +43,10 @@ There are no tests for this application
 ```
 
  ## Questions
-Github Repos: [davidschepis](https://github.com/davidschepis).
-Github Repos: [ianmordaunt](https://github.com/IanMordaunt).
-Github Repos: [borjaalix](https://github.com/borjaalix).
-Github Repos: [zhkim3](https://github.com/zhkim3).
+Github: [davidschepis](https://github.com/davidschepis).
+Github: [ianmordaunt](https://github.com/IanMordaunt).
+Github: [borjaalix](https://github.com/borjaalix).
+Github: [zhkim3](https://github.com/zhkim3).
 
  ## Credits
 *  David Schepis [davidschepis@gmail.com](mailto:davidschepis@gmail.com)
