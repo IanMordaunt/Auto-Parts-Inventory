@@ -144,6 +144,11 @@
 .storeCard {
     width: 30rem;
 }
+.storeCardStyle {
+    border:solid;
+    box-shadow: 6px 8px 0px 0px rgb(73, 32, 32);
+    border-radius: 15px; 
+}
 
 .storeCard:hover {
     opacity: .5;
