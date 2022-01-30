@@ -132,29 +132,28 @@
 .brandImg:hover {
     transform: scale(.55);
 }
-/* 
-.cardStyle {
+
+.storeCardStyle {
     border: solid;
     box-shadow: 4px 5px 0px 0px rgb(73, 32, 32);
     border-radius: 15px;
     margin-bottom: 25px;
     background-color: white;
-} */
-
-.storeCard {
     width: 30rem;
-}
-.storeCardStyle {
-    border:solid;
-    box-shadow: 6px 8px 0px 0px rgb(73, 32, 32);
-    border-radius: 15px; 
+    justify-content: center;
+    text-align: center;
 }
 
-.storeCard:hover {
+.storeCardStyle:hover {
     opacity: .5;
     cursor: pointer;
     justify-content: center;
     text-align: center;
+}
+
+#storeCardContainer {
+    padding-left:14%;
+    justify-content: center;
 }
 
 .contact {
