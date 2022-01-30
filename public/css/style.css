@@ -74,14 +74,9 @@
     
 }
 
-logoContainer{
-    justify-content: center;
-}
-
-.logo {
-    transform: scale(.25);
-    margin-top: -295px;
-    margin-left: 10%;
+.btnContainer {
+   margin-left: 0%;
+    margin-bottom: -18px;
 }
 
 .card-description {
@@ -101,7 +96,41 @@ logoContainer{
     font-weight: 800;
 }
 
+#card-price {
+    font-size: 25px;
+}
 
+#card-stock {
+    font-size: 25px;
+}
+
+.brandContainer {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.brandheader {
+    color: white;
+    font-size: 50px;
+}
+
+.brandLogoContainer {
+    margin-top: -95px;
+    /* display: flex; */
+}
+
+.brandImg {
+    transform: scale(.40);
+    box-shadow: 10px 13px 0px 0px rgb(73, 32, 32);
+    
+    border-radius: 15px;
+}
+
+.delcoImg {
+    transform: scale(.20);
+}
 
 
 
