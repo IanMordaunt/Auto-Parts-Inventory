@@ -22,7 +22,6 @@ const insertUpdateNewPart = async () => {
   });
 
   if (response.ok) {
-    alert("part updated")
     document.location.replace("/parts");
   } else {
     alert(response.statusText);
