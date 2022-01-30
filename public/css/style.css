@@ -129,6 +129,10 @@
     border-radius: 15px; 
 }
 
+.brandImg:hover {
+    transform: scale(.55);
+}
+
 .cardStyle {
     border: solid;
     box-shadow: 4px 5px 0px 0px rgb(73, 32, 32);
