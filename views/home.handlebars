@@ -1,3 +1,4 @@
+
 <h2 class="brandheader">⏤ Trusted Brands ⏤</h2>
   <div class="brandcontainer">
     <div class="row">
@@ -31,9 +32,6 @@
       <div id="imgStyle" class="col order-first">
         <img  class="brandImg" src="/images/brandlogo10.webp" alt="duralast logo" />
       </div>
-    </div>
-  </div>
-
 
 
 <div class="row">
@@ -52,12 +50,36 @@
 
           <img class="store_img" src="{{store.store_img}}" alt="storefront" />
           <img class="url" src="{{store.url}}" alt="storefront" />
+
+<div class="row h-100">
+    {{#each data as |store|}}
+    <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="card m-5 text-center shadow-lg storeCard" id="blogPost{{store.id}}"
+            onclick="handleStoreClick('{{store.id}}')">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 my-auto">
+                        <h5 class="card-title">{{store.store_name}}</h5>
+                        <p class="card-text">{{store.location}}</p>
+                        <span class="card-text">{{store.hours_operation}}</span>
+                    </div>
+                    <div class="col-6">
+                        <img class="store_img" src="{{store.store_img}}" alt="storefront">
+                        <img class="url" src="{{store.url}}" alt="storefront">
+                    </div>
+                </div>
+            </div>
+
         </div>
       </div>
     </div>
   {{/each}}
 </div>
 
+
 <script
   src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"
 ></script>
+=======
+<script src="js/homepage.js"></script>
+

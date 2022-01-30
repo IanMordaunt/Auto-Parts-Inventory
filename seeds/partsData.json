@@ -27,7 +27,7 @@
       "part_name": "Catalytic Converter",
       "price": 1000,
       "stock": 25,
-      "category": "Exhaust",
+      "category": "exhaust system",
       "description": "Converts harmful engine emissions to carbon dioxide (CO2) and water (H2O).",
       "store_id": 2
   },
