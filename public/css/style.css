@@ -36,6 +36,71 @@
    text-align:start;
 }
 
+.btnContainer {
+    display: inline-flex;
+    margin-left: 1%;
+}
+
+#udBtn {
+    margin-right: 4px;
+    font-weight: 600;
+    background-color: rgb(7, 97, 7);
+    padding: 3px 6px 3px 6px;
+}
+
+#deleteBtn {
+    margin-right: 4px;
+    font-weight: 600;
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(177, 19, 40);
+}
+
+#srBtn {
+    margin-right: 4px;
+    font-weight: 600;
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(50, 50, 230);
+}
+
+#nrBtn {
+    font-weight: 600;
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(187, 123, 46);
+}
+
+.row {
+    width: 90%;
+    flex-wrap: wrap;
+    
+}
+
+logoContainer{
+    justify-content: center;
+}
+
+.logo {
+    transform: scale(.25);
+    margin-top: -295px;
+    margin-left: 10%;
+}
+
+.card-description {
+    justify-content: center;
+    font-size: 25px;
+    line-height: 24px;
+}
+
+#card-category {
+    justify-content: center;
+    background-color: grey;
+    font-weight: 700;
+}
+
+#card-name {
+    font-size: 40px;
+    font-weight: 800;
+}
+
 
 
 
