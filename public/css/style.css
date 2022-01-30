@@ -117,15 +117,15 @@
 }
 
 .brandLogoContainer {
-    margin-top: -95px;
+    margin-top: -90px;
     /* display: flex; */
 }
 
 .brandImg {
     transform: scale(.40);
     box-shadow: 10px 13px 0px 0px rgb(73, 32, 32);
-    
     border-radius: 15px;
+    margin: 0px -4% 0px -4%;
 }
 
 .delcoImg {
