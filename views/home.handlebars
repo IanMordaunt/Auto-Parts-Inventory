@@ -17,16 +17,23 @@
 
 
 
-<div class="row">
+<div class="row h-100">
     {{#each data as |store|}}
-    <div class="col-4">
-        <div class="card m-5 text-center shadow-lg" id="blogPost{{store.id}}" style="width: 16rem;" onclick="handleStoreClick('{{store.id}}')">
+    <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="card m-5 text-center shadow-lg storeCard" id="blogPost{{store.id}}"
+            onclick="handleStoreClick('{{store.id}}')">
             <div class="card-body">
-                <h5 class="card-title">{{store.store_name}}</h5>
-                <p class="card-text">{{store.location}}</p>
-                <span class="card-text">{{store.hours_operation}}</span>
-                <img class="store_img" src="{{store.store_img}}" alt="storefront">
-                <img class="url" src="{{store.url}}" alt="storefront"> 
+                <div class="row">
+                    <div class="col-6 my-auto">
+                        <h5 class="card-title">{{store.store_name}}</h5>
+                        <p class="card-text">{{store.location}}</p>
+                        <span class="card-text">{{store.hours_operation}}</span>
+                    </div>
+                    <div class="col-6">
+                        <img class="store_img" src="{{store.store_img}}" alt="storefront">
+                        <img class="url" src="{{store.url}}" alt="storefront">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
