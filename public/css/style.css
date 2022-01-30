@@ -136,6 +136,11 @@
     width: 30rem;
 }
 
+.storeCard:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1400px) {
     .storeCard {
         width: 22rem;
