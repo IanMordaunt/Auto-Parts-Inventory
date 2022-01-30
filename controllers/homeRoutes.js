@@ -6,7 +6,6 @@ router.get("/", async (req, res) => {
   try {
     const stores = await Stores.findAll();
     const data = stores.map((store) => store.get({ plain: true }));
-    console.log(data);
     res.render("home", { data, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
@@ -112,7 +111,6 @@ router.get("/partsPage/:value", withAuth, async (req, res) => {
       },
     });
     const data2 = data.map((e) => e.get({ plain: true }));
-    console.log(req.session.logged_in)
     res.render('partsPage', { layout: 'main2', data2, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
