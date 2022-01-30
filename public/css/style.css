@@ -132,6 +132,10 @@
     transform: scale(.20);
 }
 
-
+.partsBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
