@@ -28,5 +28,15 @@
         "user_name": "Ed",
         "email": "ed-ucation@aol.com",
         "password": "greengrass88"
+      },
+      {
+        "user_name": "Mortyjames",
+        "email": "morty@me.com",
+        "password": "12345678"
+      },
+      {
+        "user_name": "1",
+        "email": "1",
+        "password": "1"
       }
   ]

@@ -78,5 +78,125 @@
       "category": "Brake System",
       "description": "Squeezes the tire",
       "store_id": 6
+    },
+    {
+      "part_name": "Air-yo",
+      "price": 245.99,
+      "stock": 19,
+      "category": "AC",
+      "description": "Squeezes the tire",
+      "store_id": 5
+    },
+    {
+      "part_name": "Air Suspension",
+      "price": 159.99,
+      "stock": 33,
+      "category": "Suspension",
+      "description": "Uses air for the suspension",
+      "store_id": 4
+    },
+    {
+      "part_name": "Multi-link Suspension",
+      "price": 299.99,
+      "stock": 15,
+      "category": "Suspension",
+      "description": "Coil springs, air springs",
+      "store_id": 3
+    },
+    {
+      "part_name": "Alarm System",
+      "price": 59.99,
+      "stock": 20,
+      "category": "Electrical",
+      "description": "Squeezes the tire",
+      "store_id": 2
+    },
+    {
+      "part_name": "Window Rotor",
+      "price": 29.99,
+      "stock": 45,
+      "category": "Electrical",
+      "description": "Motor for the window",
+      "store_id": 1
+    },
+    {
+      "part_name": "AMT",
+      "price": 499.99,
+      "stock": 5,
+      "category": "Transmission",
+      "description": "Automatic manual transmission",
+      "store_id": 5
+    },
+    {
+      "part_name": "8-Speed Tranny",
+      "price": 299.99,
+      "stock": 10,
+      "category": "Transmission",
+      "description": "Contains 8 gears with normal ratios",
+      "store_id": 4
+    },
+    {
+      "part_name": "W-16 Engine",
+      "price": 999.99,
+      "stock": 1,
+      "category": "Engine",
+      "description": "16 cylinder naturally aspirated engine",
+      "store_id": 3
+    },
+    {
+      "part_name": "V-8 Engine",
+      "price": 599.99,
+      "stock": 2,
+      "category": "Engine",
+      "description": "8 cylinder turbo engine",
+      "store_id": 2
+    },
+    {
+      "part_name": "Windshield",
+      "price": 199.99,
+      "stock": 5,
+      "category": "Misc",
+      "description": "Protects the driver from the elements",
+      "store_id": 1
+    },
+    {
+      "part_name": "Windshield Wiper",
+      "price": 29.99,
+      "stock": 25,
+      "category": "Misc",
+      "description": "Wipes the windshield",
+      "store_id": 2
+    },
+    {
+      "part_name": "Snow Tires",
+      "price": 99.99,
+      "stock": 10,
+      "category": "Misc",
+      "description": "Specialized tires for driving in the snow",
+      "store_id": 3
+    },
+    {
+      "part_name": "Disc Brakes",
+      "price": 99.99,
+      "stock": 10,
+      "category": "Brake System",
+      "description": "Disc brakes made of aluminum alloy",
+      "store_id": 4
+    },
+    {
+      "part_name": "Twin Duel",
+      "price": 299.99,
+      "stock": 5,
+      "category": "Exhaust System",
+      "description": "Quad pipes",
+      "store_id": 5
+    },
+    {
+      "part_name": "Twin Exhaust",
+      "price": 99.99,
+      "stock": 4,
+      "category": "Exhaust System",
+      "description": "Double pipes",
+      "store_id": 6
     }
 ]

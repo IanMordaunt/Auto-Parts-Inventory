@@ -57,12 +57,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("/parts", withAuth, (req, res) => {
-  //if (req.session.loggedIn) {
-  //    res.redirect("/");
-  //}
-  //else {
   res.render("parts", { logged_in: req.session.logged_in });
-  //}
 });
 
 
@@ -80,7 +75,7 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-router.post("/newPart", async (req, res) => {
+router.post("/newPart", withAuth, async (req, res) => {
   try {
     const data = await Parts.create(req.body);
     if (data) {
@@ -118,7 +113,7 @@ router.get("/partsPage/:value", withAuth, async (req, res) => {
   }
 })
 
-router.delete("/deletePart/:id", async (req, res) => {
+router.delete("/deletePart/:id", withAuth, async (req, res) => {
   try {
     const data = await Parts.destroy({
       where: {
@@ -132,7 +127,7 @@ router.delete("/deletePart/:id", async (req, res) => {
   }
 });
 
-router.put("/updatePart/:id", async (req, res) => {
+router.put("/updatePart/:id", withAuth, async (req, res) => {
   try {
     const data = await Parts.update(
       {
@@ -152,7 +147,7 @@ router.put("/updatePart/:id", async (req, res) => {
   }
 });
 
-router.post("/addReview", async (req, res) => {
+router.post("/addReview", withAuth, async (req, res) => {
   try {
     const data = await Reviews.create({
       user_id: req.session.user_id,
@@ -166,7 +161,7 @@ router.post("/addReview", async (req, res) => {
   }
 });
 
-router.get("/store/:id", async (req, res) => {
+router.get("/store/:id", withAuth, async (req, res) => {
   try {
     const data = await Parts.findAll({
       where: {
