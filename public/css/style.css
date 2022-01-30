@@ -132,6 +132,22 @@
     transform: scale(.20);
 }
 
+.storeCard {
+    width: 30rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .storeCard {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .storeCard {
+        width: 22rem;
+    }
+}
+
 
 
 
