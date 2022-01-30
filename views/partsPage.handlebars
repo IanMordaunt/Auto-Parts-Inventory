@@ -1,8 +1,8 @@
 <div class="row">
     {{#each data2 as |part|}}
     <div class="col-xl-4 col-md-8 col-12">
-        <div class="card m-5 shadow-lg " style="width: 30rem;">
-            <div class="columns is-narrow card-body">
+        <div class="card shadow-lg " style="width: 30rem;">
+            <div class="card-body">
                 <h2 style="text-align:center" id="card-id"> Part ID #: {{part.id}}</h2>
                 <h2 style="text-align:center" id="card-category">{{part.category}}</h2>
                 <h5 style="text-align:center" id="card-name">{{part.part_name}}</h5>
@@ -10,6 +10,7 @@
                 <p style="text-align:center" id="card-stock"><strong>Units in Stock: </strong> {{part.stock}}</p>
                 <p style="text-align:center" class="card-description"> <strong>{{part.description}}</strong></p>
                 <p style="text-align:center" class="card-store_id"><strong>Store ID: </strong> {{part.store_id}}</p>
+                <p style="text-align:center" class="reviews"><strong>Store ID: </strong> {{reviews.review_text}}</p>
             <div>
                 <div class="updatePartBtn">{{>updatePart}}</div>
             </div>

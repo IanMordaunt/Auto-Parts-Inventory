@@ -181,4 +181,19 @@ router.get("/store/:id", async (req, res) => {
   }
 });
 
+router.get("/reviewPage/:id", async (req, res) => {
+  try {
+    const data = await Reviews.findAll({
+      where: {
+        parts_id: req.params.id,
+      }
+    });
+    const data2 = data.map((e) => e.get({ plain: true }));
+    res.render('reviewPage', { layout: 'main2', data2, logged_in: req.session.logged_in });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+})
+
 module.exports = router;

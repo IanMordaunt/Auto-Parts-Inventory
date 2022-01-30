@@ -3,9 +3,10 @@ const newReview = (id) => {
   $('#newReviewModal').modal('show');
 };
 
-const showReview = (id) => {
-
+const showReview = async (id) => {
+  document.location.replace(`/reviewPage/${id}`)
 };
+
 
 const closeReviewModal = () => {
   $('#newReviewModal').modal('hide');
