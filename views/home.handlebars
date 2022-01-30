@@ -11,8 +11,6 @@
         <img class="brandImg" src="/images/brandlogo8.webp" alt="fel-pro logo">
         <img class="brandImg" src="/images/brandlogo9.webp" alt="peak logo">
         <img class="brandImg" src="/images/brandlogo10.webp" alt="pennzoil logo">
-        
-
     </div>
 </section>
 
@@ -22,12 +20,11 @@
 <div class="row">
     {{#each data as |store|}}
     <div class="col-4">
-        <div class="card m-5 text-center shadow-lg" id="blogPost{{store.id}}" style="width: 13rem;">
+        <div class="card m-5 text-center shadow-lg" id="blogPost{{store.id}}" style="width: 16rem;" onclick="handleStoreClick('{{store.id}}')">
             <div class="card-body">
                 <h5 class="card-title">{{store.store_name}}</h5>
                 <p class="card-text">{{store.location}}</p>
                 <span class="card-text">{{store.hours_operation}}</span>
-
                 <img class="store_img" src="{{store.store_img}}" alt="storefront">
                 <img class="url" src="{{store.url}}" alt="storefront"> 
             </div>
@@ -36,4 +33,4 @@
     {{/each}}
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="js/homepage.js"></script>

@@ -162,7 +162,22 @@ router.post("/addReview", async (req, res) => {
     res.status(200).json(data);
   }
   catch (err) {
+    console.log(err);
+  }
+});
 
+router.get("/store/:id", async (req, res) => {
+  try {
+    const data = await Parts.findAll({
+      where: {
+        store_id: req.params.id,
+      },
+    });
+    const data2 = data.map((e) => e.get({ plain: true }));
+    res.render('partsPage', { layout: 'main2', data2, logged_in: req.session.logged_in });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
 });
 
