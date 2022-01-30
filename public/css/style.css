@@ -104,32 +104,37 @@
     font-size: 25px;
 }
 
-.brandContainer {
+.brandheader {
     justify-content: center;
     text-align: center;
     padding-top: 10px;
     font-size: 30px;
-}
-
-.brandheader {
     color: white;
     font-size: 50px;
 }
 
-.brandLogoContainer {
-    margin-top: -90px;
-    /* display: flex; */
+.brandcontainer {
+    width: 100%;
+    justify-content: center;
+    margin: -3% 0% 0% 6.5%;
+}
+
+#imgStyle {
+    margin: 0px -11% 0px 0%;
 }
 
 .brandImg {
-    transform: scale(.40);
+    transform: scale(.44);
     box-shadow: 10px 13px 0px 0px rgb(73, 32, 32);
-    border-radius: 15px;
-    margin: 0px -4% 0px -4%;
+    border-radius: 15px; 
 }
 
-.delcoImg {
-    transform: scale(.20);
+.cardStyle {
+    border: solid;
+    box-shadow: 4px 5px 0px 0px rgb(73, 32, 32);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: white;
 }
 
 .storeCard {

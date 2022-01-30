@@ -1,21 +1,55 @@
-<section class="brandContainer">
-    <h2 class="brandheader">⏤ Trusted Brands ⏤</h2>
-    <div class="brandLogoContainer">
-        <img class="brandImg" src="/images/brandimg.webp" alt="valvoline logo">
-        <img class="brandImg" src="/images/brandimg2.webp" alt="mobil logo">
-        <img class="brandImg" src="/images/brandlogo3.webp" alt="continental logo">
-        <img class="brandImg" src="/images/brandlogo4.webp" alt="bosch logo">
-        <img class="brandImg" src="/images/brandlogo5.webp" alt="duralast logo">
-        <img class="brandImg" src="/images/brandlogo6.webp" alt="versachem logo">
-        <img class="brandImg" src="/images/brandlogo7.webp" alt="castrol logo">
-        <img class="brandImg" src="/images/brandlogo8.webp" alt="fel-pro logo">
-        <img class="brandImg" src="/images/brandlogo9.webp" alt="peak logo">
-        <img class="brandImg" src="/images/brandlogo10.webp" alt="pennzoil logo">
-    </div>
-</section>
+
+<h2 class="brandheader">⏤ Trusted Brands ⏤</h2>
+  <div class="brandcontainer">
+    <div class="row">
+      <div class="col order-last">
+       <img id="imgStyle" class="brandImg" src="/images/brandimg.webp" alt="valvoline logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandimg2.webp" alt="mobil logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandlogo3.webp" alt="continental logo"/>
+      </div>
+      <div id="imgStyle" class="col">
+       <img  class="brandImg" src="/images/brandlogo4.webp" alt="bosch logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandlogo5.webp" alt="duralast logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandlogo6.webp" alt="duralast logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandlogo7.webp" alt="duralast logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandlogo8.webp" alt="duralast logo" />
+      </div>
+      <div id="imgStyle" class="col">
+        <img  class="brandImg" src="/images/brandlogo9.webp" alt="duralast logo" />
+      </div>
+      <div id="imgStyle" class="col order-first">
+        <img  class="brandImg" src="/images/brandlogo10.webp" alt="duralast logo" />
+      </div>
 
 
+<div class="row">
+  {{#each data as |store|}}
+    <div class="col-4">
+      <div
+        class="cardStyle"
+        class="card m-5 text-center shadow-lg"
+        id="blogPost{{store.id}}"
+        style="width: 13rem;"
+      >
+        <div class="card-body">
+          <h5 class="card-title">{{store.store_name}}</h5>
+          <p class="card-text">{{store.location}}</p>
+          <span class="card-text">{{store.hours_operation}}</span>
 
+          <img class="store_img" src="{{store.store_img}}" alt="storefront" />
+          <img class="url" src="{{store.url}}" alt="storefront" />
 
 <div class="row h-100">
     {{#each data as |store|}}
@@ -35,9 +69,17 @@
                     </div>
                 </div>
             </div>
+
         </div>
+      </div>
     </div>
-    {{/each}}
+  {{/each}}
 </div>
 
+
+<script
+  src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"
+></script>
+=======
 <script src="js/homepage.js"></script>
+
