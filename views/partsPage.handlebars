@@ -5,23 +5,20 @@
             <div class="card-body">
                 <h2 style="text-align:center" id="card-id"> Part ID #: {{part.id}}</h2>
                 <h2 style="text-align:center" id="card-category">{{part.category}}</h2>
-                <h5 style="text-align:center" id="card-name">Name: {{part.part_name}}</h5>
+                <h5 style="text-align:center" id="card-name">{{part.part_name}}</h5>
                 <p style="text-align:center" id="card-price"><strong>Price: </strong> ${{part.price}}</p>
                 <p style="text-align:center" id="card-stock"><strong>Units in Stock: </strong> {{part.stock}}</p>
-                <p style="text-align:center" class="card-description"> <strong>Part Description: </strong> {{part.description}}</p>
+                <p style="text-align:center" class="card-description"> <strong>{{part.description}}</strong></p>
                 <p style="text-align:center" class="card-store_id"><strong>Store ID: </strong> {{part.store_id}}</p>
-                <div>
-                    <div class="updatePartBtn">{{>updatePart}}</div>
-                </div>
-
-                <button class="btn btn-secondary" onclick="showUpdateModal()">Update Part</button>
-                <button id="deleteBtn" type="button" class="btn btn-secondary" onclick="deleteButtonHandler()">Delete
-                    Part</button>
-                <button type="button" class="btn btn-secondary" onclick="showReview('{{part.id}}')">Show Reviews</button>
-                <button type="button" class="btn btn-secondary" onclick="newReview('{{part.id}}')">New Review</button>
-
-
-
+            <div>
+                <div class="updatePartBtn">{{>updatePart}}</div>
+            </div>
+            <div class="btnContainer">
+                <button id="udBtn" class="btn btn-secondary" onclick="showUpdateModal()">Update Part</button>
+                <button id="deleteBtn" type="button" class="btn btn-secondary" onclick="deleteButtonHandler()">Delete Part</button>
+                <button id="srBtn" type="button" class="btn btn-secondary" onclick="showReview('{{part.id}}')">Show Reviews</button>
+                <button id="nrBtn"type="button" class="btn btn-secondary" onclick="newReview('{{part.id}}')">New Review</button>
+            </div>
             </div>
         </div>
     </div>
