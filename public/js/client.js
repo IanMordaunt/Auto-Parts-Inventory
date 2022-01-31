@@ -5,7 +5,7 @@ async function doSearch() {
   if (value === "engine" || value === "transmission" || value === "electrical" || value === "suspension" || value === "ac" || value === "exhaust system" || value === "brake system" || value === "misc") {
     document.location.replace(`/partsPage/${value}`);
   } else {
-    alert("nothing was selected in a search bar")
+    //do nothing
   }
 
 };

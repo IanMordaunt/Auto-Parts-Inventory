@@ -6,7 +6,7 @@ const deleteButtonHandler = function (event) {
         method: "DELETE"
     })
         .then(function () {
-            document.location.replace("/parts");
+            $('#deleteModal').modal('show');
         })
         .catch(err => console.log(err))
 }
@@ -16,4 +16,9 @@ document.getElementById('deleteBtn').addEventListener('click', deleteButtonHandl
 
 const extractID = (el) => {
     return parseInt(String(el).match(/\d+/gi).join(''))
+};
+
+const deleteModalHide = () => {
+    $('#deleteModal').modal('hide');
+    window.location.reload();
 };
