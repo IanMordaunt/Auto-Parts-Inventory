@@ -47,7 +47,7 @@
 
 <div id="storeCardContainer" class="row h-100">
   {{#each data as |store|}}
-  <div class="col-xl-4 col-lg-6 col-md-6">
+  <div id="cardCol"class="col-xl-4 col-lg-6 col-md-6">
     <div class="card m-5 storeCard storeCardStyle" id="blogPost{{store.id}}"
       onclick="handleStoreClick('{{store.id}}')">
       <div class="card-body">

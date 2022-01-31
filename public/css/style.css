@@ -449,7 +449,7 @@ li {
         text-align: center;
     }
 
-    .col-xl-4 {
+    #cardCol{
         width: 30rem;
     }
 
