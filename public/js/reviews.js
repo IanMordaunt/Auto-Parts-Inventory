@@ -3,8 +3,16 @@ const newReview = (id) => {
   $('#newReviewModal').modal('show');
 };
 
-const showReview = (id) => {
-  document.location.replace(`/reviewPage/${id}`);
+const showReview = async (id) => {
+  const data = await fetch(`/numReviews/${id}`);
+  const result = await data.json();
+  console.log(result)
+  if (result.length === 0) {
+    $('#noReviewsModal').modal('show');
+  }
+  else {  
+    document.location.replace(`/reviewPage/${id}`);
+  }
 };
 
 
@@ -26,4 +34,8 @@ const saveReviewModal = async () => {
   } else {
     alert(response.statusText);
   }
+};
+
+const noReviewsModalHide = () => {
+  $('#noReviewsModal').modal('hide');
 };
