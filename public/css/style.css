@@ -93,7 +93,11 @@
 /* Parts Card */
 
 .newPartBtn {
+   /* display: inline-block;
+   width: 500px;
+   height: 80px;    */
    text-align:start;
+   /* padding: 20px 30px 20px 30px;     */
 }
 
 .btnContainer {
@@ -233,21 +237,27 @@ li {
 }
 
 #newPartBtn {
-    margin-top: 60px;
-    padding: 20px 30px 20px 30px;
+
+    display: inline-block;
+   width: 300px;
+   height: 80px;   
+    padding: 20px 30px 62px 30px;
     font-size: 30px;
-    margin-left: 30%;
 } 
 
 #categoryDropdown {
-    /* margin-top: -90px; */
-    padding: 20px 30px 20px 30px;
+    padding: 20px 80px 20px 30px;
     font-size: 30px;
 }
 
-.searchDrop {
-    margin-left: 30%;
+
+#findPartBtn {
+    padding: 20px 30px 17px 30px;
+    font-size: 30px;
+    vertical-align: top;
 }
+
+
 
 #catSelect {
     padding: 30px;
@@ -752,6 +762,7 @@ li {
     
     }
 
-    body {
-        padding-bottom: 100px;
-    }
+#NewDiv{
+    font-size: 30px;
+}
+

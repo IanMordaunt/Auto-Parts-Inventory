@@ -1,33 +1,31 @@
 <div class="parts_body">
   <div class="parts_container">
     <div class="row">
-      <div class="col-md-8 col-sm-12 ">
-        <div class="col-md-12">
-        <div class="newPartBtn">
-          {{>newParts}}
-        </div>
-        </div>
 
-        <div class="col-4">
-
-
-
-          <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
-            <option id="catSelect" selected>Search</option>
-            <option value="engine">Engine</option>
-            <option value="transmission">Transmission</option>
-            <option value="electrical">Electrical</option>
-            <option value="suspension">Suspension</option>
-            <option value="ac">AC</option>
-            <option value="exhaust system">Exhaust</option>
-            <option value="brake system">Brakes</option>
-            <option value="misc">Misc</option>
-          </select>
-          <div class="col-md-8">
-          <button id="findPartBtn" onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
-          </div>
-        </div>
+      <div class="col-12 col-sm-4">
+      <div id="NewDiv" class="newPartBtn">
+        {{>newParts}}
       </div>
+    </div>
+
+
+      <div class="col-12 col-sm-4">
+        <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
+          <option id="catSelect" selected>Search</option>
+          <option value="engine">Engine</option>
+          <option value="transmission">Transmission</option>
+          <option value="electrical">Electrical</option>
+          <option value="suspension">Suspension</option>
+          <option value="ac">AC</option>
+          <option value="exhaust system">Exhaust</option>
+          <option value="brake system">Brakes</option>
+          <option value="misc">Misc</option>
+        </select>
+        <button id="findPartBtn" onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
+      </div>
+      
+
+
       <script src="js/client.js"></script>
 
     </div>
