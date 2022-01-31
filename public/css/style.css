@@ -221,7 +221,6 @@
   justify-content: center;
   text-align: center;
   display: inline;
-  margin-bottom: -3%;
 }
 
 .footerInfo {
@@ -751,4 +750,8 @@ li {
             align-items: center;
         }
     
+    }
+
+    body {
+        padding-bottom: 100px;
     }
