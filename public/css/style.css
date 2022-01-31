@@ -257,7 +257,8 @@ li {
 }
 
 
-
+@media screen and (max-width: 2160px) {
+    ,
 
 @media screen and (max-width: 1400px) {
     .storeCard {
