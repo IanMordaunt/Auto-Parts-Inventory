@@ -18,6 +18,16 @@
     color: white;
 }
 
+#navTitle {
+    padding-left: 3%;
+}
+
+#navTitle:hover {
+    transform: scale(1.1);
+    color:rgb(197, 12, 12);
+
+}
+
 /* Store Card */
 
 #storeCardContainer {
@@ -192,10 +202,11 @@
 }
 
 .contact {
-    font-size: 25px;
+    padding-right: 100px;
+    font-size: 35px;
     color: white;
     justify-content: center;
-    padding-top: 20px;
+    
 }
 
 .contact:hover {
@@ -203,16 +214,50 @@
 }
 
 .footerContainer {
-background-color: blue;
-  height: 80px;
   justify-content: center;
   text-align: center;
   display: inline;
+  margin-bottom: -3%;
+}
+
+.footerInfo {
+    height: 100px;
+    padding-top: 20px;
 }
 
 li {
     list-style: none;
 }
+
+#newPartBtn {
+    margin-top: 60px;
+    padding: 20px 30px 20px 30px;
+    font-size: 30px;
+    margin-left: 30%;
+} 
+
+#categoryDropdown {
+    /* margin-top: -90px; */
+    padding: 20px 30px 20px 30px;
+    font-size: 30px;
+}
+
+.searchDrop {
+    margin-left: 30%;
+}
+
+#catSelect {
+    padding: 30px;
+    font-size: 30px;
+}
+
+#findPartBtn {
+    padding: 20px 30px 20px 30px;
+    font-size: 30px;
+}
+
+
+
 
 @media screen and (max-width: 1400px) {
     .storeCard {

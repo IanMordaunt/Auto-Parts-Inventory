@@ -4,9 +4,9 @@
       {{>newParts}}
     </div>
 
-    <div>
+    <div class="searchDrop">
       <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
-        <option selected>Search</option>
+        <option id="catSelect"selected>Search</option>
         <option value="engine">Engine</option>
         <option value="transmission">Transmission</option>
         <option value="electrical">Electrical</option>
@@ -17,7 +17,7 @@
         <option value="misc">Misc</option>
       </select>
     </div>
-    <button onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
+    <button id="findPartBtn" onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
     <script src="js/client.js"></script>
   </div>
 </div>
