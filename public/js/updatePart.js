@@ -1,5 +1,51 @@
-const showUpdateModal = () => {
+const showUpdateModal = (part_id, category, name, price, stock, description, store_id) => {
+  let cat;
+  switch (category) {
+    case "Engine":
+      cat = 1;
+      break;
+    case "Transmission":
+      cat = 2;
+      break;
+    case "Electrical":
+      cat = 3;
+      break;
+    case "Suspension":
+      cat = 4;
+      break;
+    case "AC":
+      cat = 5;
+      break;
+    case "Exhaust System":
+      cat = 6;
+      break;
+    case "Brake System":
+      cat = 7;
+      break;
+    case "Misc":
+      cat = 8;
+      break;
+    default:
+      alert("ERROR ERROR");
+      break;
+  }
+
+  document.getElementById("insertUpdateCategory").selectedIndex = cat;
+
+  $('#insertUpdatePartId').val(part_id);
+  $('#insertUpdatePartName').val(name);
+  $('#insertUpdatePrice').val(price);
+  $('#insertUpdateStock').val(stock);
+  $('#insertUpdateDescription').val(description);
+  $('#insertUpdateStore').val(store_id);
+  $('#updateModalLabel').text(`Update ${name}`);
+
   $('#insertUpdateModal').modal('show');
+}
+
+const updateConfirmModalHide = () => {
+  $('#updateConfirmModal').modal('hide');
+  window.location.reload();
 }
 
 const closeUpdateModal = () => {
@@ -22,7 +68,7 @@ const insertUpdateNewPart = async () => {
   });
 
   if (response.ok) {
-    document.location.replace("/parts");
+    $('#updateConfirmModal').modal('show');
   } else {
     alert(response.statusText);
   }

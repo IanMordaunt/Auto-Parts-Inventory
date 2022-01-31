@@ -2,7 +2,7 @@
     {{#each data2 as |part|}}
     <div class="col-xl-4 col-md-8 col-12">
 
-        <div class="card shadow-lg " style="width: 30rem;">
+        <div class="card shadow-lg h-100 mt-5" style="width: 30rem;">
             <div class="card-body">
 
                 <h2 style="text-align:center" id="card-id"> Part ID #: {{part.id}}</h2>
@@ -12,12 +12,11 @@
                 <p style="text-align:center" id="card-stock"><strong>Units in Stock: </strong> {{part.stock}}</p>
                 <p style="text-align:center" class="card-description"> <strong>{{part.description}}</strong></p>
                 <p style="text-align:center" class="card-store_id"><strong>Store ID: </strong> {{part.store_id}}</p>
-
                 <div>
                     <div class="updatePartBtn">{{>updatePart}}</div>
                 </div>
                 <div class="btnContainer">
-                    <button id="udBtn" class="btn btn-secondary" onclick="showUpdateModal()">Update Part</button>
+                    <button id="udBtn" class="btn btn-secondary" onclick="showUpdateModal('{{part.id}}', '{{part.category}}', '{{part.part_name}}', '{{part.price}}', '{{part.stock}}', '{{part.description}}', '{{part.store_id}}')">Update Part</button>
                     <button id="deleteBtn" type="button" class="btn btn-secondary"
                         onclick="deleteButtonHandler()">Delete Part</button>
                     <button id="srBtn" type="button" class="btn btn-secondary" onclick="showReview('{{part.id}}')">Show
@@ -56,6 +55,25 @@
     </div>
 </div>
 
+<!-- New Part Confirmation Modal -->
+<div class="modal fade" id="updateConfirmModal" tabindex="-1" role="dialog" aria-labelledby="updateConfirmModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateConfirmModalTitle">Success!</h5>
+      </div>
+      <div class="modal-body">
+        Part was successfully updated
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="updateConfirmModalHide()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script src="../js/reviews.js"></script>
 <script src="../js/delete-part.js"></script>
+<script src="../js/updatePart.js"></script>

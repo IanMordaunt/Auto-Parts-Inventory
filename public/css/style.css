@@ -30,9 +30,13 @@
 
 /* Store Card */
 
+.col-xl-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #storeCardContainer {
    width: 100%;
-   
     display: flex;
     flex-wrap: wrap;
     padding-left: 19%;
@@ -256,17 +260,41 @@ li {
     font-size: 30px;
 }
 
-
 @media screen and (max-width: 2160px) {
-    ,
 
-@media screen and (max-width: 1400px) {
-    .storeCard {
-        width: 22rem;
+    .url {
+        margin: 10px;
+        width: 200px;
+        height: 130px;
+        display: flex;
+        float: bottom; 
+    }
+    
+    .store_img{
+        padding-left: 9%;
+        float: top;
+        display: flex;
+        float: bottom;  
+        width: 400px;
+        max-height: 170px;
+        margin: 10px;
+    }
+    
+    .card-title {
+        font-size: 30px;
+        font-weight: 700;
     }
 }
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (max-width: 2160px) {
+    #storeCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+@media screen and (max-width: 1400px) {
     .storeCard {
         width: 22rem;
     }
@@ -276,6 +304,29 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.url {
+    margin: 10px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    float: bottom; 
+}
+
+.store_img{
+    padding-left: 9%;
+    float: top;
+    display: flex;
+    float: bottom;  
+    width: 400px;
+    max-height: 170px;
+    margin: 10px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 
