@@ -174,10 +174,6 @@
     font-size: 25px;
 }
 
-.card-user-id{
-    font-size: 40px;
-}
-
 /* Trusted Brand */
 
 .brandheader {
@@ -236,10 +232,12 @@
 li {
     list-style: none;
 }
-/* @media screen and (max-width: 2160px) { */
+
 #newPartBtn {
+    margin-top: 60px;
     padding: 20px 30px 20px 30px;
     font-size: 30px;
+    margin-left: 30%;
 } 
 
 #categoryDropdown {
@@ -248,22 +246,19 @@ li {
     font-size: 30px;
 }
 
-#findPartBtn {
-    padding: 20px 30px 20px 30px;
-    font-size: 30px;
-}
-
-
-/* .searchDrop {
+.searchDrop {
     margin-left: 30%;
-} */
+}
 
 #catSelect {
     padding: 30px;
     font-size: 30px;
 }
 
-
+#findPartBtn {
+    padding: 20px 30px 20px 30px;
+    font-size: 30px;
+}
 
 @media screen and (max-width: 2225px) {
 
@@ -402,8 +397,8 @@ li {
         float: top;
         display: flex;
         float: bottom;  
-        width: 250px;
-        max-height: 140px;
+        width: 290px;
+        max-height: 150px;
         margin: 10px;
     }
 
@@ -414,7 +409,7 @@ li {
     }
     .url {
         margin: 10px;
-        width: 230px;
+        width: 270px;
         height: 140px;
         display: flex;
         float: bottom; 
@@ -439,11 +434,10 @@ li {
         float: top;
         display: flex;
         float: bottom;  
-        width: 220px;
-        max-height: 130px;
+        width: 280px;
+        max-height: 160px;
         margin: 10px;
     }
-}
 
     #urlImg {
         margin-right: 40%;
@@ -452,8 +446,8 @@ li {
     }
     .url {
         margin: 10px;
-        width: 200px;
-        height: 130px;
+        width: 270px;
+        height: 140px;
         display: flex;
         float: bottom; 
     }
@@ -467,9 +461,6 @@ li {
         align-items: center;
         text-align: center;
     }
-    .col-xl-4 {
-        width: 30rem;
-    }
 
     #cardInfoRow {
         justify-content: center;
@@ -480,8 +471,8 @@ li {
         float: top;
         display: flex;
         float: bottom;  
-        width: 220px;
-        max-height: 130px;
+        width: 280px;
+        max-height: 160px;
         margin: 10px;
     }
 
@@ -492,8 +483,8 @@ li {
     }
     .url {
         margin: 10px;
-        width: 200px;
-        height: 130px;
+        width: 260px;
+        height: 150px;
         display: flex;
         float: bottom; 
     }
@@ -511,6 +502,8 @@ li {
     }
 }
 
+@media screen and (max-width: 1400px) {
+
 .partsBox{
     display: flex;
     justify-content: center;
@@ -518,3 +511,244 @@ li {
 }
 
 }
+
+@media screen and (max-width: 575px) {
+    #storeCardContainer {
+        align-items: center;
+        text-align: center;
+    }
+
+    #cardInfoRow {
+        justify-content: center;
+        text-align: center;
+    }
+    .store_img{
+        padding-left: 9%;
+        float: top;
+        display: flex;
+        float: bottom;  
+        width: 250px;
+        max-height: 150px;
+        margin: 10px;
+    }
+
+    #urlImg {
+        margin-right: 40%;
+        justify-content: center;
+        text-align: center;
+    }
+    .url {
+        margin: 10px;
+        width: 230px;
+        height: 140px;
+        display: flex;
+        float: bottom; 
+    }
+    .card-title {
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    #storeCardContainer {
+        align-items: center;
+        text-align: center;
+    }
+
+    #cardInfoRow {
+        justify-content: center;
+        text-align: center;
+    }
+    .store_img{
+        padding-left: 9%;
+        float: top;
+        display: flex;
+        float: bottom;  
+        width: 230px;
+        max-height: 140px;
+        margin: 10px;
+    }
+
+    #urlImg {
+        margin-right: 40%;
+        justify-content: center;
+        text-align: center;
+    }
+    .url {
+        margin: 10px;
+        width: 200px;
+        height: 130px;
+        display: flex;
+        float: bottom; 
+    }
+    .card-title {
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    #storeCardContainer {
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    #cardInfoRow {
+        justify-content: center;
+        text-align: center;
+    }
+    .store_img{
+        padding-left: 9%;
+        float: top;
+        display: flex;
+        float: bottom;  
+        width: 200px;
+        max-height: 120px;
+        margin: 10px;
+    }
+
+    #urlImg {
+        margin-right: 40%;
+        justify-content: center;
+        text-align: center;
+    }
+    .url {
+        margin: 10px;
+        width: 180px;
+        height: 120px;
+        display: flex;
+        float: bottom; 
+    }
+    .card-title {
+        align-items: center;
+    }
+}
+
+    
+    @media screen and (max-width: 535px) {
+        #storeCardContainer {
+            align-items: center;
+            text-align: center;
+        }
+    
+        #cardInfoRow {
+            justify-content: center;
+            text-align: center;
+        }
+        .store_img{
+            padding-left: 9%;
+            float: top;
+            display: flex;
+            float: bottom;  
+            width: 200px;
+            max-height: 140px;
+            margin: 10px;
+        }
+    
+        #urlImg {
+            margin-right: 40%;
+            justify-content: center;
+            text-align: center;
+        }
+        .url {
+            margin: 10px;
+            width: 180px;
+            height: 130px;
+            display: flex;
+            float: bottom; 
+        }
+        .card-title {
+            align-items: center;
+        }
+    
+    }
+
+    
+    @media screen and (max-width: 465px) {
+        #storeCardContainer {
+            align-items: center;
+            text-align: center;
+        }
+    
+        .card-title {
+            font-size: 20px;
+        }
+    
+        #cardInfoRow {
+            justify-content: center;
+            text-align: center;
+        }
+        .store_img{
+            padding-left: 9%;
+            float: top;
+            display: flex;
+            float: bottom;  
+            width: 170px;
+            max-height: 110px;
+            margin: 10px;
+        }
+    
+        #urlImg {
+            margin-right: 40%;
+            justify-content: center;
+            text-align: center;
+        }
+        .url {
+            margin: 10px;
+            width: 140px;
+            height: 100px;
+            display: flex;
+            float: bottom; 
+        }
+        .card-title {
+            align-items: center;
+        }
+    
+    }
+
+    @media screen and (max-width: 430px) {
+        #storeCardContainer {
+            align-items: center;
+            text-align: center;
+        }
+    
+        .card-title {
+            font-size: 20px;
+        }
+    
+        #cardInfoRow {
+            justify-content: center;
+            text-align: center;
+        }
+        .store_img{
+            padding-left: 9%;
+            float: top;
+            display: flex;
+            float: bottom;  
+            width: 140px;
+            max-height: 100px;
+            margin: 10px;
+        }
+    
+        #urlImg {
+            margin-right: 40%;
+            justify-content: center;
+            text-align: center;
+        }
+        .url {
+            margin: 10px;
+            width: 110px;
+            height: 90px;
+            display: flex;
+            float: bottom; 
+        }
+        .card-title {
+            align-items: center;
+        }
+    
+    }
