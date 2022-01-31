@@ -178,12 +178,17 @@ router.get("/store/:id", withAuth, async (req, res) => {
 router.get("/reviewPage/:id", async (req, res) => {
   try {
     const data = await Reviews.findAll({
-      where: {
-        parts_id: req.params.id,
-      }
+      include: [{ model: User }],
     });
     const data2 = data.map((e) => e.get({ plain: true }));
-    res.render('reviewPage', { layout: 'main2', data2, logged_in: req.session.logged_in });
+    let result = [];
+    for (let i = 0; i < data2.length; i++) {
+      if (data2[i].parts_id == req.params.id) {
+        result.push(data2[i]);
+      }
+    }
+    console.log(result)
+    res.render('reviewPage', { layout: 'main2', result, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
