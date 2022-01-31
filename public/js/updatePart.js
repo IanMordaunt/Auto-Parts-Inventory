@@ -43,6 +43,11 @@ const showUpdateModal = (part_id, category, name, price, stock, description, sto
   $('#insertUpdateModal').modal('show');
 }
 
+const updateConfirmModalHide = () => {
+  $('#updateConfirmModal').modal('hide');
+  window.location.reload();
+}
+
 const closeUpdateModal = () => {
   $('#insertUpdateModal').modal('hide');
 }
@@ -63,7 +68,7 @@ const insertUpdateNewPart = async () => {
   });
 
   if (response.ok) {
-    document.location.replace("/parts");
+    $('#updateConfirmModal').modal('show');
   } else {
     alert(response.statusText);
   }

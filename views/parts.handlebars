@@ -3,7 +3,6 @@
     <div class="newPartBtn">
       {{>newParts}}
     </div>
-
     <div>
       <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
         <option selected>Search</option>
@@ -21,3 +20,23 @@
     <script src="js/client.js"></script>
   </div>
 </div>
+
+<!-- New Part Confirmation Modal -->
+<div class="modal fade" id="newPartConfirmModal" tabindex="-1" role="dialog" aria-labelledby="newPartConfirmModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newPartConfirmModalTitle">Success!</h5>
+      </div>
+      <div class="modal-body">
+        New part was added to the database
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="newPartConfirmModalHide()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/newPart.js"></script>

@@ -1,10 +1,14 @@
 const showModal = () => {
   $('#insertModal').modal('show');
-}
+};
 
 const closeModal = () => {
   $('#insertModal').modal('hide');
-}
+};
+
+const newPartConfirmModalHide = () => {
+  $('#newPartConfirmModal').modal('hide');
+};
 
 const insertNewPart = async () => {
   const part_name = document.getElementById("insertPartName").value;
@@ -21,7 +25,7 @@ const insertNewPart = async () => {
   });
 
   if (response.ok) {
-    document.location.replace("/parts");
+    $('#newPartConfirmModal').modal('show');
   } else {
     alert(response.statusText);
   }
