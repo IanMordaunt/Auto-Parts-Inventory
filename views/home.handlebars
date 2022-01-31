@@ -51,14 +51,17 @@
     <div class= "storeCardStyle" class="card m-5 text-center shadow-lg storeCard" id="blogPost{{store.id}}"
       onclick="handleStoreClick('{{store.id}}')">
       <div class="card-body">
+        <div class="col-6">
+            <img class="store_img" src="{{store.store_img}}" alt="storefront">
+        </div>
         <div class="row">
-          <div class="col-6 my-auto">
+          <div id= "storeInfo" class="col-6 my-auto">
             <h5 class="card-title">{{store.store_name}}</h5>
             <p class="card-text">{{store.location}}</p>
             <span class="card-text">{{store.hours_operation}}</span>
           </div>
           <div class="col-6">
-            <img class="store_img" src="{{store.store_img}}" alt="storefront">
+            {{!-- <img class="store_img" src="{{store.store_img}}" alt="storefront"> --}}
             <img class="url" src="{{store.url}}" alt="storefront">
           </div>
         </div>
