@@ -220,12 +220,6 @@ li {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .storeCard {
-        width: 22rem;
-    }
-}
-
 .partsBox{
     display: flex;
     justify-content: center;
