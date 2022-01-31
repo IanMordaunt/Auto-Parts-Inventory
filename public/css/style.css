@@ -18,19 +18,65 @@
     color: white;
 }
 
+/* Store Card */
+
+#storeCardContainer {
+   width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 19%;
+}
+
+.col-xl-4 {
+    margin-right: -5%;
+}
+
+.storeCardStyle {
+    border: solid;
+    box-shadow: 4px 5px 0px 0px rgb(73, 32, 32);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: white;
+    width: 30rem;
+    text-align: center;
+}
+
+.storeCardStyle:hover {
+    opacity: .5;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+#storeInfo {
+    float: bottom;
+}
+
 .url {
     margin: 10px;
-    width: 150px;
+    width: 200px;
+    height: 130px;
     display: flex;
     float: bottom; 
 }
 
 .store_img{
+    padding-left: 9%;
+    float: top;
     display: flex;
     float: bottom;  
-    width: 150px;
+    width: 400px;
+    max-height: 170px;
     margin: 10px;
 }
+
+.card-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Parts Card */
 
 .newPartBtn {
    text-align:start;
@@ -48,11 +94,19 @@
     padding: 3px 6px 3px 6px;
 }
 
+#udBtn:hover {
+    transform: scale(1.1);
+}
+
 #deleteBtn {
     margin-right: 4px;
     font-weight: 600;
     padding: 3px 6px 3px 6px;
     background-color: rgb(177, 19, 40);
+}
+
+#deleteBtn:hover {
+    transform: scale(1.1);
 }
 
 #srBtn {
@@ -62,16 +116,18 @@
     background-color: rgb(50, 50, 230);
 }
 
+#srBtn:hover {
+    transform: scale(1.1);
+}
+
 #nrBtn {
     font-weight: 600;
     padding: 3px 6px 3px 6px;
     background-color: rgb(187, 123, 46);
 }
 
-.row {
-    width: 90%;
-    flex-wrap: wrap;
-    
+#nrBtn:hover {
+    transform: scale(1.1);
 }
 
 .btnContainer {
@@ -104,6 +160,8 @@
     font-size: 25px;
 }
 
+/* Trusted Brand */
+
 .brandheader {
     justify-content: center;
     text-align: center;
@@ -133,29 +191,6 @@
     transform: scale(.55);
 }
 
-.storeCardStyle {
-    border: solid;
-    box-shadow: 4px 5px 0px 0px rgb(73, 32, 32);
-    border-radius: 15px;
-    margin-bottom: 25px;
-    background-color: white;
-    width: 30rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.storeCardStyle:hover {
-    opacity: .5;
-    cursor: pointer;
-    justify-content: center;
-    text-align: center;
-}
-
-#storeCardContainer {
-    padding-left:14%;
-    justify-content: center;
-}
-
 .contact {
     font-size: 25px;
     color: white;
@@ -168,10 +203,15 @@
 }
 
 .footerContainer {
+background-color: blue;
   height: 80px;
   justify-content: center;
   text-align: center;
   display: inline;
+}
+
+li {
+    list-style: none;
 }
 
 @media screen and (max-width: 1400px) {
