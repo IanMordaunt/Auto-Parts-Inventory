@@ -18,5 +18,7 @@ User.hasMany(Reviews, {
     onDelete: 'CASCADE'
 });
 
+Reviews.belongsTo(User);
+
 
 module.exports = { User, Parts, Reviews, Stores };
