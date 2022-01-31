@@ -195,4 +195,19 @@ router.get("/reviewPage/:id", async (req, res) => {
   }
 })
 
+router.get("/numReviews/:id", async (req, res) => {
+  try {
+    const data = await Reviews.findAll({
+      where: {
+        parts_id: req.params.id
+      }
+    });
+    const data2 = data.map((e) => e.get({ plain: true }));
+    res.send(data2);
+  }
+  catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
