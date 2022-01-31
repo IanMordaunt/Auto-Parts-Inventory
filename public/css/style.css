@@ -236,12 +236,10 @@
 li {
     list-style: none;
 }
-
+/* @media screen and (max-width: 2160px) { */
 #newPartBtn {
-    margin-top: 60px;
     padding: 20px 30px 20px 30px;
     font-size: 30px;
-    margin-left: 30%;
 } 
 
 #categoryDropdown {
@@ -250,19 +248,22 @@ li {
     font-size: 30px;
 }
 
-.searchDrop {
-    margin-left: 30%;
+#findPartBtn {
+    padding: 20px 30px 20px 30px;
+    font-size: 30px;
 }
+
+
+/* .searchDrop {
+    margin-left: 30%;
+} */
 
 #catSelect {
     padding: 30px;
     font-size: 30px;
 }
 
-#findPartBtn {
-    padding: 20px 30px 20px 30px;
-    font-size: 30px;
-}
+
 
 @media screen and (max-width: 2160px) {
 
@@ -297,6 +298,7 @@ li {
         display: flex;
         flex-wrap: wrap;
     }
+}
 
 @media screen and (max-width: 1400px) {
     .storeCard {

@@ -1,47 +1,54 @@
 <div class="parts_body">
   <div class="parts_container">
-    <div class="newPartBtn">
-      {{>newParts}}
-    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 ">
+        <div class="col-md-12">
+        <div class="newPartBtn">
+          {{>newParts}}
+        </div>
+        </div>
+
+        <div class="col-4">
 
 
-    <div class="searchDrop">
 
-    <div>
-
-      <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
-        <option id="catSelect"selected>Search</option>
-        <option value="engine">Engine</option>
-        <option value="transmission">Transmission</option>
-        <option value="electrical">Electrical</option>
-        <option value="suspension">Suspension</option>
-        <option value="ac">AC</option>
-        <option value="exhaust system">Exhaust</option>
-        <option value="brake system">Brakes</option>
-        <option value="misc">Misc</option>
-      </select>
-    </div>
-    <button id="findPartBtn" onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
-    <script src="js/client.js"></script>
-  </div>
-</div>
-
-<!-- New Part Confirmation Modal -->
-<div class="modal fade" id="newPartConfirmModal" tabindex="-1" role="dialog" aria-labelledby="newPartConfirmModal"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="newPartConfirmModalTitle">Success!</h5>
+          <select id="categoryDropdown" class="form-select, input-medium" aria-label="Default select example">
+            <option id="catSelect" selected>Search</option>
+            <option value="engine">Engine</option>
+            <option value="transmission">Transmission</option>
+            <option value="electrical">Electrical</option>
+            <option value="suspension">Suspension</option>
+            <option value="ac">AC</option>
+            <option value="exhaust system">Exhaust</option>
+            <option value="brake system">Brakes</option>
+            <option value="misc">Misc</option>
+          </select>
+          <div class="col-md-8">
+          <button id="findPartBtn" onclick="doSearch()" type="button" class="btn btn-primary">Find Part</button>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        New part was added to the database
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" onclick="newPartConfirmModalHide()">Close</button>
-      </div>
+      <script src="js/client.js"></script>
+
     </div>
   </div>
-</div>
 
-<script src="js/newPart.js"></script>
+  <!-- New Part Confirmation Modal -->
+  <div class="modal fade" id="newPartConfirmModal" tabindex="-1" role="dialog" aria-labelledby="newPartConfirmModal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newPartConfirmModalTitle">Success!</h5>
+        </div>
+        <div class="modal-body">
+          New part was added to the database
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="newPartConfirmModalHide()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/newPart.js"></script>
