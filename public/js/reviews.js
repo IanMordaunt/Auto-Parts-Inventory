@@ -3,8 +3,8 @@ const newReview = (id) => {
   $('#newReviewModal').modal('show');
 };
 
-const showReview = async (id) => {
-  document.location.replace(`/reviewPage/${id}`)
+const showReview = (id) => {
+  document.location.replace(`/reviewPage/${id}`);
 };
 
 
@@ -22,6 +22,7 @@ const saveReviewModal = async () => {
   });
   if (response.ok) {
     $('#newReviewModal').modal('hide');
+    document.location.replace(`/reviewPage/${id}`);
   } else {
     alert(response.statusText);
   }
