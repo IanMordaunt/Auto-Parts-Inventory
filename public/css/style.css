@@ -78,7 +78,7 @@
     border-color: grey;
 }
 
-#loginBtn {
+.loginBtn {
     margin-top: 15px;
     margin-left: 36%;
     font-size: 40px;
