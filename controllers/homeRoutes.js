@@ -147,12 +147,11 @@ router.put("/updatePart/:id", withAuth, async (req, res) => {
 });
 
 router.post("/addReview", withAuth, async (req, res) => {
-  
   try {
     const data = await Reviews.create({
-      ...req.body,
-      user_id: req.session.user_id,
-      
+      user_id: req.session.userid,
+      parts_id: req.body.parts_id,
+      review_text: req.body.review_text
     });
     res.status(200).json(data);
   }

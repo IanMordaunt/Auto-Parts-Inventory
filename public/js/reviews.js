@@ -37,7 +37,7 @@ const saveReviewModal = async () => {
   });
   if (response.ok) {
     $('#newReviewModal').modal('hide');
-    document.location.replace(`/reviewPage/${parts_id}`);
+    showReview(parts_id);
   } else {
     alert(response.statusText);
   }
