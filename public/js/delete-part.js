@@ -1,4 +1,4 @@
-const deleteButtonHandler = function (event) {
+const deleteButtonHandler = function () {
     let cardId = document.getElementById('card-id').innerHTML
     cardId = extractID(cardId);
 
