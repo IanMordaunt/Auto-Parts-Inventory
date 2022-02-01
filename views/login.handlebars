@@ -1,4 +1,4 @@
-<div id="formsRow"class="login_section">
+{{!-- <div id="formsRow" class="login_section">
   <div class="row">
     <div id="loginSection" class="col-12">
       <h2 class="loginTitle bg-dark">Login</h2>
@@ -6,11 +6,11 @@
       <form class="loginFormStyle" id="login-form" data-parsley-validate="">
         <div class="form-group">
           <label for="email-login">Email:</label>
-          <input class="form-input" type="email" id="email-login" required=""/>
+          <input class="form-input" type="email" id="email-login" required="" />
         </div>
         <div class="form-group">
           <label for="password-login">Password:</label>
-          <input class="form-input" type="password" id="password-login" required=""/>
+          <input class="form-input" type="password" id="password-login" required="" />
         </div>
         <div class="form-group">
           <button class="btn btn-primary loginBtn" type="submit">login</button>
@@ -23,15 +23,15 @@
       <form class="form" id="signup-form" data-parsley-validate="">
         <div class="form-group">
           <label for="name-signup">name:</label>
-          <input class="form-input" type="text" id="name-signup" required=""/>
+          <input class="form-input" type="text" id="name-signup" required="" />
         </div>
         <div class="form-group">
           <label for="email-signup">email:</label>
-          <input class="form-input" type="email" id="email-signup" required=""/>
+          <input class="form-input" type="email" id="email-signup" required="" />
         </div>
         <div class="form-group">
           <label for="password-signup">password:</label>
-          <input class="form-input" type="password" id="password-signup" required="" minlength="8"/>
+          <input class="form-input" type="password" id="password-signup" required="" minlength="8" />
         </div>
         <div class="form-group">
           <button class="btn btn-primary loginBtn" type="submit">signup</button>
@@ -39,8 +39,53 @@
       </form>
     </div>
   </div>
-</div>
+</div> --}}
 
+<div class="row">
+  <div class="col-lg-6 col-sm-12">
+    <div class="card h-100" style="width: 24rem;">
+      <div class="card-body">
+        <h5 class="card-title">Login</h5>
+        <form class="loginFormStyle" id="login-form" data-parsley-validate="">
+          <div class="form-group">
+            <label for="email-login">Email:</label>
+            <input class="form-input" type="email" id="email-login" required="" />
+          </div>
+          <div class="form-group">
+            <label for="password-login">Password:</label>
+            <input class="form-input" type="password" id="password-login" required="" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <div class="card h-100" style="width: 24rem;">
+      <div class="card-body">
+        <h5 class="card-title">Signup</h5>
+        <form class="form" id="signup-form" data-parsley-validate="">
+        <div class="form-group">
+          <label for="name-signup">name:</label>
+          <input class="form-input" type="text" id="name-signup" required="" />
+        </div>
+        <div class="form-group">
+          <label for="email-signup">email:</label>
+          <input class="form-input" type="email" id="email-signup" required="" />
+        </div>
+        <div class="form-group">
+          <label for="password-signup">password:</label>
+          <input class="form-input" type="password" id="password-signup" required="" minlength="8" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">signup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="/js/login.js"></script>
