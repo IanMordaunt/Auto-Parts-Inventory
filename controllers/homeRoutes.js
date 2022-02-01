@@ -65,7 +65,7 @@ router.post("/signup", async (req, res) => {
   try {
     const data = await User.create(req.body);
     req.session.save(() => {
-      req.session.user_id = data.id;
+      req.session.userid = data.id;
       req.session.logged_in = true;
       res.status(200).json(data);
     });
@@ -176,7 +176,7 @@ router.get("/store/:id", withAuth, async (req, res) => {
   }
 });
 
-router.get("/reviewPage/:id", async (req, res) => {
+router.get("/reviews/:id", async (req, res) => {
   try {
     const data = await Reviews.findAll({
       include: [{ model: User }],
@@ -188,8 +188,7 @@ router.get("/reviewPage/:id", async (req, res) => {
         result.push(data2[i]);
       }
     }
-    console.log(result)
-    res.render('reviewPage', { layout: 'main2', result, logged_in: req.session.logged_in });
+    res.status(200).json(result)
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
