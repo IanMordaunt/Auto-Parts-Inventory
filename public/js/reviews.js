@@ -6,12 +6,18 @@ const newReview = (id) => {
 const showReview = async (id) => {
   const data = await fetch(`/numReviews/${id}`);
   const result = await data.json();
-  console.log(result)
   if (result.length === 0) {
     $('#noReviewsModal').modal('show');
   }
   else {  
-    document.location.replace(`/reviewPage/${id}`);
+    const response = await fetch(`/reviews/${id}`);
+    const r = await response.json();
+    let output = "";
+    for (let i = 0; i < r.length; i++) {
+      output += `<div><h5>${r[i].user.user_name}</h5><h5>${r[i].review_text}</h5><br>`;
+    }
+    $('#reviewBody').html(output)
+    $('#reviewsModal').modal('show');
   }
 };
 
@@ -30,7 +36,7 @@ const saveReviewModal = async () => {
   });
   if (response.ok) {
     $('#newReviewModal').modal('hide');
-    document.location.replace(`/reviewPage/${id}`);
+    showReview(id);
   } else {
     alert(response.statusText);
   }
@@ -39,3 +45,7 @@ const saveReviewModal = async () => {
 const noReviewsModalHide = () => {
   $('#noReviewsModal').modal('hide');
 };
+
+const reviewsModalHide = () => {
+  $('#reviewsModal').modal('hide');
+}
