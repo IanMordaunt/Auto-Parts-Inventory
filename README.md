@@ -17,7 +17,11 @@ Utilizes parsley.js for form validation. https://parsleyjs.org/
 - [Credits](#credits)
 
  ## Links
-https://github.com/IanMordaunt/Auto-Parts-Inventory
+Github: https://github.com/IanMordaunt/Auto-Parts-Inventory
+
+Heroku: https://auto-parts-inventory-tracker.herokuapp.com/
+
+
 
  ## Installation
 To install necessary dependencies, run the following command:
