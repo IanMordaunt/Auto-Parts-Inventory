@@ -306,24 +306,33 @@ align-items: center;
  
 
 #newPartBtn {
-    margin-top: 4rem;
+    margin-top: 7rem;
+    margin-left: 20%;
     display: inline-block;
-   width: 300px;
-   height: 80px;   
-    padding: 20px 30px 62px 30px;
-    font-size: 30px;
+    padding: 20px 40px 62px 40px;
+    font-size: 100px;
+    box-shadow: rgb(73, 32, 32) 9px 10px 9px 0px;
 } 
 
 #categoryDropdown {
     padding: 20px 80px 20px 30px;
-    font-size: 30px;
+    font-size: 100px;
+    background-color: white;
+    padding-right: 20px;
 }
 
 
 #findPartBtn {
+    margin-left: 20%;
     padding: 20px 30px 17px 30px;
-    font-size: 30px;
+    font-size: 100px;
     vertical-align: top;
+    box-shadow: rgb(73, 32, 32) 9px 10px 9px 0px;
+}
+
+#findPartCol {
+    margin-top: 14rem;
+    margin-left: 20%;
 }
 
 
@@ -332,13 +341,6 @@ align-items: center;
     padding: 30px;
     font-size: 30px;
 }
-
-#findPartBtn {
-    padding: 20px 30px 20px 30px;
-    font-size: 30px;
-}
-
-
 
 
 @media screen and (max-width: 2225px) {
@@ -392,6 +394,82 @@ align-items: center;
         width: 350px;
         max-height: 170px;
         margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    #newPartBtn {
+        margin-top: 7rem;
+        margin-left: 20%;
+        display: inline-block;
+        padding: 20px 40px 62px 40px;
+        font-size: 60px;
+        box-shadow: rgb(73, 32, 32) 9px 10px 9px 0px;
+    } 
+    
+    #categoryDropdown {
+        padding: 20px 80px 20px 30px;
+        font-size:35px;
+        background-color: white;
+        padding-right: 20px;
+    }
+    
+    
+    #findPartBtn { 
+        margin-left: 20%;
+        padding: 20px 30px 17px 30px;
+        font-size: 60px;
+        vertical-align: top;
+        box-shadow: rgb(73, 32, 32) 9px 10px 9px 0px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #newPartBtn {
+        margin-top: 7rem;
+        margin-left: 20%;
+        display: inline-block;
+        padding: 20px 40px 62px 40px;
+        font-size: 40px;
+        box-shadow: rgb(73, 32, 32) 9px 10px 9px 0px;
+    } 
+    
+    #categoryDropdown {
+        padding: 20px 80px 20px 30px;
+        font-size: 30px;
+        background-color: white;
+        padding-right: 20px;
+    }
+    
+    
+    #findPartBtn { 
+        margin-left: 20%;
+        padding: 20px 30px 17px 30px;
+        font-size: 40px;
+        vertical-align: top;
+        box-shadow: rgb(73, 32, 32) 9px 10px 9px 0px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    #categoryDropdown {
+        padding: 20px 80px 20px 30px;
+        font-size: 70px;
+        background-color: white;
+        padding-right: 20px;
+        margin-right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1035px) {
+    #categoryDropdown {
+        padding: 20px 80px 20px 30px;
+        font-size: 50px;
+        background-color: white;
+        padding-right: 20px;
+        margin-right: 40px;
     }
 
 }
