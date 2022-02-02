@@ -28,6 +28,7 @@
 
 }
 
+
 /* Login Page Form */
 
 #formsRow {
@@ -253,7 +254,7 @@
 .brandcontainer {
     width: 100%;
     justify-content: center;
-    margin: -3% 0% 0% 6.5%;
+    margin: -3% 0% 0% 0%;
 }
 
 #imgStyle {
